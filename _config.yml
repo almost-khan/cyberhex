@@ -91,7 +91,7 @@ search:
 # hexo-tag-cloud
 tag_cloud:
     textFont:
-    textColour: #F2F2F2
+    textColour: #222222
     textHeight: 15
     outlineColour: #FFFFFF
 
