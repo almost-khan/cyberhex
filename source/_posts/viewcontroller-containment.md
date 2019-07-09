@@ -6,7 +6,6 @@ categories:
 - iOS
 copyright: true
 comments: true
-visible: hide
 ---
 本文主要记录在工作过程中如何利用 View Controller Containment 来重构 UI
 <!--more-->

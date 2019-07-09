@@ -4,6 +4,7 @@ tags: [Swift, iOS, Design Pattern]
 categories: 
 - 翻译
 - iOS
+visible: hide
 ---
 
 > 作者：Jordan Morgan，[原文链接](https://www.swiftjectivec.com/optimizing-images/)，原文日期：2018-12-11
