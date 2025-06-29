@@ -3,7 +3,6 @@ title: 优化图片
 tags: [Swift, iOS, Design Pattern]
 categories: 
 - 翻译
-- iOS
 visible: hide
 ---
 

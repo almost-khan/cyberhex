@@ -2,8 +2,7 @@
 title: 你不知道的 View Controller Containment
 tags: [Swift, iOS, Design Pattern]
 categories: 
-- 学习笔记
-- iOS
+- 工作总结
 copyright: true
 comments: true
 ---

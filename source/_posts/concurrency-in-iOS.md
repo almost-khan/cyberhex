@@ -1,10 +1,9 @@
 ---
 title: iOS 中的并发性问题
 date: 2018-11-27 13:39:41
-tags: [Objective-C, iOS, Nullability]
+tags: [Swift, iOS, Concurrency]
 categories: 
 - 学习笔记
-- iOS
 copyright: true
 comments: true
 ---
@@ -156,4 +155,3 @@ sleep(2)
 
 
 {% endnote %}
-
