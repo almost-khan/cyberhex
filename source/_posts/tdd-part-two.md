@@ -452,7 +452,7 @@ RxTest 更加全面，可以覆盖大部分测试，而且 TestScheduler 模拟�
 
 [To Be Continued](https://cyberhex.me/2020/07/07/tdd-part-three/)（此处应有专属音乐）
 
-{% note info %}
+## 相关链接
 
 相关链接：
 
@@ -463,4 +463,3 @@ RxTest 更加全面，可以覆盖大部分测试，而且 TestScheduler 模拟�
 [Testing with RxBlocking, part 2](http://rx-marin.com/post/rxblocking-part2/)
 [Testing Your RxSwift Code](https://www.raywenderlich.com/7408-testing-your-rxswift-code#toc-anchor-005)
 
-{% endnote %}

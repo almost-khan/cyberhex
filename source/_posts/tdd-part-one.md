@@ -65,7 +65,7 @@ TDD 与 BUG 的爱恨情仇（卷一）
 
 如果你对我说的这些都感兴趣，那就跟着我的节奏一起摇摆（不好意思，走错片场了），跟着我的步伐一起深入了解 TDD，欢迎观看下一集 [A song of TDD and BUG - 主歌](https://cyberhex.me/2020/07/07/tdd-part-two/)。
 
-{% note info %}
+## 相关链接
 
 相关链接：
 
@@ -73,4 +73,3 @@ TDD 与 BUG 的爱恨情仇（卷一）
 [Unit Testing, TDD, and BDD, Oh My. Your Guide to Different Unit Testing Techniques](https://blog.gurock.com/unit-testing-tdd-bdd/?utm_source=adwords&utm_medium=cpc&utm_campaign=asia_afr_ams_en_dsa&utm_content=&creative=302597526479&keyword=&matchtype=b&network=g&device=c&gclid=CjwKCAjwmMX4BRAAEiwA-zM4JryMT8iAqgeNEpB6mdo1aCOXYdR-EOIEADy8R1eG20r5vvgv7lelfhoCDDYQAvD_BwE)
 [论单元测试的重要性](http://www.51testing.com/html/00/n-3724000.html)
 
-{% endnote %}

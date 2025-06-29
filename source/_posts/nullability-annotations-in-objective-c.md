@@ -91,12 +91,12 @@ class User: NSObject {
 
 这算是我第一篇正儿八经的博客了，也算是学习笔记性质的记录博客，所以内容不一定是完全正确的，所以还希望各位大佬不吝赐教，大家一起学习。
 
-{% note info %}
+## 相关链接
 
 相关链接：
 
 [Tree House: Nullability Annotations in Objective-C](https://teamtreehouse.com/library/nullability-annotations-in-objectivec)
 
-{% endnote %}
+
 
 

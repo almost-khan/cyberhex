@@ -108,10 +108,9 @@ final class MasterViewControlller: UIViewController {
 View Controller Containment 是一种非常实用的重构 UI 的设计模式，我在接触了这种模式后就开始欲罢不能（谁用谁知道）。这种模式不仅能增加代码的复用性和可拓展性，还可以将逻辑进行分离从而增加代码的可读性。所以把它加入你的 skill set 中会给你以后的工作和学习带来很大的益处。
 
 
-{% note info %}
+## 相关链接
 
 相关链接：
 
 [Managing View Controllers With Container View Controllers](https://cocoacasts.com/managing-view-controllers-with-container-view-controllers)
 
-{% endnote %}

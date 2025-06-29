@@ -141,17 +141,12 @@ sleep(2)
 答案我会在下一篇博客中揭晓。
 
 
-{% note info %}
+## 相关链接
 
-相关链接：
-
-[Tree House: Concurrency in iOS](https://teamtreehouse.com/library/concurrency-in-ios)
+[Tree House: Concurrency in iOS](https://teamtreehouse.com/library/concurrency-in-iOS)
 [Linus Torvalds 的邮件](http://lkml.iu.edu/hypermail/linux/kernel/9608/0191.html)
 [进程和线程的区别](https://www.cnblogs.com/lmule/archive/2010/08/18/1802774.html)
 [我所理解的 iOS 并发编程](https://juejin.im/post/5b1cf4fa6fb9a01e4b062771)
 [The GCD Handbook](http://khanlou.com/2016/04/the-GCD-handbook/)
 [OBJC Concurrent Programming](https://www.objc.io/issues/2-concurrency/)
 [iOS 多线程：『GCD』详尽总结](https://www.jianshu.com/p/2d57c72016c6)
-
-
-{% endnote %}

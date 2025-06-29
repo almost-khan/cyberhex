@@ -114,7 +114,7 @@ TDD 与 BUG 的爱恨情仇（卷三），本系列链表头部请戳 [A song of
 本章粗略总结了一下 TDD 的基本步骤和单元测试之外的几个重要的测试。一个很重要的概念就是测试金字塔，这个是所有测试的基本哲学，在构架你的 FTDD 的时候一定要考虑到。
 
 
-{% note info %}
+## 相关链接
 
 相关链接：
 
@@ -124,5 +124,5 @@ TDD 与 BUG 的爱恨情仇（卷三），本系列链表头部请戳 [A song of
 [Automated Testing and the Test Pyramid](https://jamescrisp.org/2011/05/30/automated-testing-and-the-test-pyramid/)
 [Introducing Depth of Test (DOT)](http://fabiopereira.me/blog/2012/03/18/introducing-depth-of-test-dot/)
  
-{% endnote %}
+
 
