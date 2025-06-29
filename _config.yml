@@ -79,7 +79,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/quintessencegpy/quintessencegpy.github.io
+  repository: git@github.com:quintessencegpy/quintessencegpy.github.io.git
   branch: master
 
 search:
