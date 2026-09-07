@@ -266,35 +266,27 @@ audio {
 .logo {
   display: flex;
   flex-direction: row;
-  width: 200px;
-  height: 32px;
-  animation-delay: 800ms;
-  animation-duration: 1.2s;
+  align-items: center;
+  gap: 1rem;
+  width: auto;
+  height: 40px;
 
   img {
-    display: flex;
-    width: 32px;
-    height: 32px;
+    display: block;
+    width: 40px;
+    height: 40px;
   }
-
-  .image-logo {
-    margin-left: 0.5rem;
-    z-index: 10;
-    position: relative;
-    display: flex;
-    -webkit-background-size: 75px 32px;
-    -moz-background-size: 75px 32px;
-    background-size: 75px 32px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-mask-box-image: url("../img/logo.png");
-    background-color: white;
-    width: 75px;
-    height: 32px;
-    mask-image: url("../img/logo.png");
-    mask-size: contain;
-    transition: background-color 0.5s ease-in-out;
-  }
+}
+.site-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+  line-height: 40px;
+}
+@media (max-width: 600px) {
+  .site-title { font-size: 27px; }
+  .logo { gap: 12px; }
 }
 
 img.spin {

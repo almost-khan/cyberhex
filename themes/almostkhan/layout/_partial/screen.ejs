@@ -14,10 +14,10 @@
 </div>
 <div id="header">
     <div>
-        <div class="logo animated fadeInDown">
-            <img src="<%- url_for(theme.favicon) %>" alt="">
-            <a class="image-logo" href="/" aria-label="首页"></a>
-        </div>
+        <a class="logo" href="/" aria-label="AlmostKhan 首页">
+            <img src="<%- url_for(theme.favicon) %>" alt="" width="40" height="40">
+            <span class="site-title"><%= config.title %></span>
+        </a>
         <ul id="menu-menu" class="menu text-menu">
             <% for (var i in theme.menu){ %>
             <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
@@ -38,7 +38,7 @@
             animation-duration: 2.8s;
             background-image:
                 radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.56), #100e17),
-                url(<%- url_for((first && first.cover) || "/img/cover.jpg") %>);">
+                url(<%- url_for((first && first.cover) || theme.welcome_cover) %>);">
         </div>
     </div>
     <% if ( first ) { %>

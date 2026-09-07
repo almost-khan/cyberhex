@@ -13,10 +13,10 @@ socials:
   twitter: ''
   stackoverflow: ''
 TOC: true
-welcome_cover: /img/cover.jpg
-cover: /img/welcome-cover.jpg
-avatar: /img/profile.jpg
-favicon: /img/favicon.png
+welcome_cover: /img/cover.png
+cover: /img/welcome-cover.png
+avatar: /img/profile.jpg?v=brand-restored
+favicon: /img/favicon.png?v=brand-restored
 scrollbar: false
 descriptionOne: 'Simple(r) Always Wins.'
 descriptionTwo: ''
