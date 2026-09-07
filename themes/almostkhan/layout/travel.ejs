@@ -1,0 +1,54 @@
+---
+layout: false
+---
+<% const trip = site.data.new_zealand; %>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><%= page.title %> · <%= config.title %></title>
+<meta name="description" content="<%= page.description %>">
+<link rel="canonical" href="<%= full_url_for(page.path) %>">
+<meta property="og:type" content="website">
+<meta property="og:title" content="<%= page.title %>">
+<meta property="og:description" content="<%= page.description %>">
+<meta property="og:url" content="<%= full_url_for(page.path) %>">
+<meta name="theme-color" content="#193e34">
+<link rel="icon" href="/img/favicon.png">
+<link rel="stylesheet" href="/css/travel.css">
+<script defer src="/js/travel.js"></script>
+</head>
+<body>
+<a class="skip" href="#timeline">跳至每日时间线</a>
+<header class="sitebar"><a href="/" class="brand">AlmostKhan<span>旅行笔记</span></a><div><span class="edition">FIELD NOTES / 2026</span><button id="print-trip" type="button" hidden>打印 / 存为 PDF ↗</button></div></header>
+<main>
+<section class="hero" aria-labelledby="trip-title">
+<div class="hero-copy"><p class="eyebrow">AOTEAROA / NEW ZEALAND</p><h1 id="trip-title">一路向南，<br>再去<span>中土。</span></h1><p class="intro">从蒂卡波的星空到米尔福德的峭壁，<br>沿南岛湖山前行，在北岛走进夏尔与萤火虫的微光。</p><div class="hero-meta"><span>2026.09.30 — 10.11</span><span>12天 · 9晚</span><span>行程草案 <%= trip.version %></span></div><a class="primary" href="#timeline">展开每日行程 <span>↓</span></a></div>
+<div class="route-art" aria-label="路线顺序示意，不代表真实地图或距离">
+<div class="route-art-top"><span>THE JOURNEY</span><span>南岛 6 晚 / 北岛 3 晚</span></div>
+<ol class="route-spine"><li><span>01</span><div><b>Auckland</b><small>10.01 入境 · 住机场附近</small></div><em>飞往南岛 ↘</em></li><li><span>02</span><div><b>Christchurch → Tekapo</b><small>10.02 基督城取车 · 蒂卡波观星</small></div></li><li><span>03</span><div><b>Aoraki → Wānaka</b><small>10.03—04 库克山 · 普卡基湖 · Twizel</small></div></li><li><span>04</span><div><b>Queenstown</b><small>10.05—08 峡湾 · 格林诺奇 · 箭镇</small></div><em>两组分别北返 ↗</em></li><li><span>05</span><div><b>Hobbiton + Spellbound</b><small>10.09 官方导览 · 萤火虫双洞</small></div></li><li><span>06</span><div><b>Auckland → Home</b><small>10.10—11 国际返程 · 深圳中转</small></div></li></ol><p class="route-caption">路线顺序示意 · 基督城进，皇后镇出</p>
+</div>
+</section>
+<div class="status-strip"><span class="status-dot"></span><p><strong>路线已定，预订尚未锁位。</strong>依据 <%= trip.updated %> 的计划与查询记录整理；余位、价格不是实时结果。新西兰时刻为 NZDT（中国＋5小时），国际航段显示各地当地时间。</p></div>
+<nav class="section-nav" aria-label="页面章节"><a href="#timeline">每日时间线</a><a href="#bookings">活动报名 <span>06</span></a><a href="#driving">车程与导航</a><a href="#flights">航班与分组</a><a href="#stay">住宿与租车</a><a href="#prepare">预算与待办</a></nav>
+<section class="attention" aria-label="关键衔接提醒"><article><span>01 / 紧衔接</span><h2>10/2：航班、取车、观星一起确认</h2><p>早班落地后首次左驾，21:10需到观星基地。蒂卡波只有一晚，延误不能靠疲劳夜驾追回。</p></article><article><span>02 / 分组行动</span><h2>10/8：朋友先走，其余人继续</h2><p>朋友优先上午飞奥克兰；其余人箭镇半日后北返。上午班尚未确认，不擅自弃乘拼接票首段。</p></article><article><span>03 / 待决定</span><h2>10/9：约15.5小时在外</h2><p>两场目标导览须同时确认。纯驾驶约6—7小时，自驾还是带司机仍待同行人选择，睡眠余量偏紧。</p></article></section>
+<section id="timeline" class="chapter"><div class="section-heading"><div><p class="eyebrow">01 / DAY BY DAY</p><h2>每天怎么走，都在这里。</h2></div><p>时间线是执行模型。<br>真实航班、酒店和订单确认后整体校正。</p></div>
+<div class="timeline-layout"><aside class="day-nav" aria-label="按日期跳转"><p>12 DAYS / 2026</p><% trip.days.forEach(day => { %><a href="#<%= day.id %>"><time datetime="<%= day.date %>"><%= day.short %></time><span><%= day.place.split(' → ')[0] %></span></a><% }) %></aside><div class="days">
+<% trip.days.forEach((day, index) => { %><article class="day" id="<%= day.id %>"><div class="day-top"><span class="day-number">DAY <%= String(index + 1).padStart(2, '0') %></span><time datetime="<%= day.date %>"><%= day.short %></time><span class="region"><%= ({south:'南岛',north:'北岛',transit:'国际交通',split:'分组 · 南岛→北岛'})[day.region] %></span></div><h3><%= day.title %></h3><p class="day-place"><%= day.place %></p><p class="day-summary"><%= day.summary %></p><div class="day-facts"><span><small>今晚住哪</small><b><%= day.stay %></b></span><span><small>移动额度</small><b><%= day.drive %></b></span></div>
+<ol class="schedule"><% day.schedule.forEach(event => { %><li><span class="event-time"><%= event.time %></span><p><%= event.text %></p></li><% }) %></ol>
+<% if (day.warning) { %><p class="day-warning"><strong>衔接提醒</strong><%= day.warning %></p><% } %>
+<% if (day.detail) { %><details class="day-detail"><summary>完整执行说明、装备与变更条件 <span>＋</span></summary><div class="prose"><%- travel_markdown(day.detail) %></div></details><% } %>
+</article><% }) %></div></div></section>
+<section id="bookings" class="chapter tinted"><div class="section-heading"><div><p class="eyebrow">02 / RESERVATIONS</p><h2>报名要选什么，先核对再出发。</h2></div><p>这里是查询与报名入口，不是订单。<br>所有项目均未付款、未锁位。</p></div><p class="section-note">日期一律选择 <strong>2026年</strong>，重选实际人数、语言和票种。酒店搜索默认2成人／1间房，仅为查询口径。打开预订站后，检查页面是否保留日期。</p>
+<div class="booking-grid"><% trip.bookings.forEach(item => { %><article class="booking" id="booking-<%= item.id %>"><div class="booking-top"><span class="priority"><%= item.priority %></span><span><%= item.date %></span></div><p class="booking-en"><%= item.en %></p><h3><%= item.title %></h3><p class="booking-state"><%= item.state %></p><p class="price"><%= item.price %><small>参考口径 · 非付款确认价</small></p><p class="snapshot"><%= item.snapshot %></p><dl><% item.facts.forEach(fact => { %><div><dt><%= fact[0] %></dt><dd><%= fact[1] %></dd></div><% }) %></dl><div class="booking-links"><% item.links.forEach((link,i) => { %><a class="<%= i===0?'book-link':'text-link' %>" href="<%= link[1] %>" target="_blank" rel="noopener noreferrer"><%= link[0] %> ↗</a><% }) %></div></article><% }) %></div>
+<details class="extra"><summary>备选观星、跨日订票与库存口径</summary><div class="prose"><p>9/7记录：Summit 10/2英文21:00仅1位，23:00仅2位；中文21:45已满。超过2人的团队不能据此安排全员同场。Summit是Mt John山顶，约1小时45分，与主选Crater不同；NZ$219公开价仅适用至9/30，不作为十月报价。</p><p>10/2的00:30或01:00是抵达蒂卡波之前的凌晨，不能错当10/2晚上。10/3凌晨虽属于10/2之后的夜间，也不默认安排深夜场。</p><p><a href="https://book.darkskyproject.co.nz/activity/selection?filter=prodgroup-DSPSUMM&amp;WorkingDate=02%20Oct%202026" target="_blank" rel="noopener">Summit备选查询 ↗</a> · <a href="https://www.darkskyproject.com/experiences/the-summit-experience/" target="_blank" rel="noopener">产品说明 ↗</a></p><p>旧Hobbiton奥克兰往返团（NZ$315、余28位）和NZ$659联游套餐已不执行；其库存不能证明自驾官方早场有位。任何查询失败、验证码或空页面都不等于售罄。未将酒店、租车、航班、Skyline标为“都可订”。</p></div></details>
+</section>
+<section id="driving" class="chapter"><div class="section-heading"><div><p class="eyebrow">03 / ON THE ROAD</p><h2>车程只是起点，留白也算时间。</h2></div><p>纯驾驶 ≠ 门到门。<br>餐饮、停车、签到和休息单独计入。</p></div><div class="prose"><%- travel_markdown(trip.sections.roads) %></div><h3 class="subheading">一键打开路线</h3><p class="section-note">导航链接未预加载地图。起终点已写入；实际酒店／门店未定的路段仍需替换地址，页面未获取实时交通。峡湾跟团，以运营方路线为准。</p><div class="map-links"><% trip.maps.forEach(route => { %><a href="<%= route.url %>" target="_blank" rel="noopener noreferrer"><span><%= route.title %></span><b>↗</b></a><% }) %></div></section>
+<section id="flights" class="chapter tinted"><div class="section-heading"><div><p class="eyebrow">04 / FLIGHTS & CONNECTIONS</p><h2>同程出发，分开返航。</h2></div><p>截图票与规划模型分开列。<br>未编造航班号、订单或已出票状态。</p></div><div class="prose"><%- travel_markdown(trip.sections.flights) %></div><details class="extra"><summary>国内票查询记录与操作入口</summary><div class="prose"><%- travel_markdown(trip.sections.flightQuery) %></div></details></section>
+<section id="stay" class="chapter"><div class="section-heading"><div><p class="eyebrow">05 / STAY & RENTALS</p><h2>九晚落点，两段租车。</h2></div><p>朋友只参与前7晚。<br>其余人另住10/8、10/9奥克兰两晚。</p></div><div class="night-count"><div><b>6</b><span>南岛共同住宿<br>Tekapo 1 · Twizel 1 · Wānaka 1 · Queenstown 3</span></div><div><b>3</b><span>北岛住宿<br>入境夜机场附近 1 · 其余人市区 2</span></div></div><div class="prose"><%- travel_markdown(trip.sections.hotels) %></div><div class="car-grid"><article><p class="eyebrow">SOUTH ISLAND / ONE WAY</p><h3>基督城取，皇后镇还</h3><div class="prose"><%- travel_markdown(trip.sections.southCar) %></div></article><article><p class="eyebrow">NORTH ISLAND / AIRPORT RETURN</p><h3>奥克兰机场取还 · 约两天</h3><div class="prose"><p><strong>10/8约20:30取 → 10/10约17:00还。</strong>10/8取行李后留20:05—21:05接驳、手续与验车，预计22:00进城停车入住。不是10/9早晨才去门店取车。</p><p>10/10的17:00—18:00留给验车、卸行李和去国际楼的接驳，18:00前到航站楼。报价按真实时刻核算，不能只按日历天数。</p><p>GO机场门店有公开的非营业时间服务说明，但车辆、报价、晚到交车及航班延误后的服务均未确认。两晚酒店需停车，10/10停车延至下午也须确认。</p><p>核对车型与行李空间、合同认可的两名司机、保险／自付额、额外司机、晚间交车费、油费、停车与预授权。带司机仍是待决定的替代方案。</p><p><a href="https://www.gorentals.co.nz/rental-car-locations/auckland-airport/" target="_blank" rel="noopener">GO Auckland Airport ↗</a> · <a href="https://www.gorentals.co.nz/rental-car-locations/auckland-airport/faq/" target="_blank" rel="noopener">门店FAQ ↗</a></p></div></article></div></section>
+<section id="prepare" class="chapter tinted"><div class="section-heading"><div><p class="eyebrow">06 / BEFORE YOU GO</p><h2>先打通依赖，再完成订单。</h2></div><p>人数、房间、司机与行李仍待补齐。<br>没有用旧路线总价冒充本次预算。</p></div><div class="prose"><%- travel_markdown(trip.sections.priorities) %></div><h3 class="subheading">预算如何计算</h3><div class="prose"><%- travel_markdown(trip.sections.budget) %></div><details class="extra"><summary>全部预约前置条件、驾照、退款与出行准备</summary><div class="prose"><%- travel_markdown(trip.sections.prerequisites) %></div></details><details class="extra"><summary>路线取舍与同行约定</summary><div class="prose"><%- travel_markdown(trip.sections.principles) %></div></details><details class="extra"><summary>参考资料、路线研究与出发前复核</summary><div class="prose"><%- travel_markdown(trip.sections.research) %></div></details></section>
+<footer class="travel-footer"><p class="eyebrow">KEEP THE PLAN. LEAVE ROOM FOR THE JOURNEY.</p><h2>把路书带上，把余地留下。</h2><p>整理自《新西兰旅行计划》<%= trip.version %> 与《预约查询结果与全部链接》，记录更新于 <%= trip.updated %>。<br>历史v0.7反向路线、旧日期库存与旧往返团方案不执行；本页未实时刷新库存、下单或付款。</p><div><a href="/">← 返回 AlmostKhan</a><a href="#trip-title">回到顶部 ↑</a></div></footer>
+</main>
+</body>
+</html>

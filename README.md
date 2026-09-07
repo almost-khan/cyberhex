@@ -54,3 +54,14 @@ npx hexo deploy
 `npx hexo deploy` 会实际推送生成的网站，执行前需要本机 GitHub SSH 认证及目标仓库的写入权限。
 
 发布目标由 `_config.yml` 的 `deploy` 配置指定，当前是 `almost-khan/almostkhan.github.io` 的 `master` 分支。博客源码的 Git 提交与网站发布是两件独立的事。GitHub Pages 的 HTTPS 和域名设置见 [ssl-setup-guide.md](ssl-setup-guide.md)。
+
+## 新西兰旅行页面
+
+入口为 `/new-zealand/`，首页菜单中有“新西兰路书”。内容整理自 Obsidian《新西兰旅行计划》v0.14（2026-09-07）及《预约查询结果与全部链接》；旧版反向路线与被替代的接送团不作为执行安排。
+
+- `source/_data/new_zealand.json`：12天时间线、6个活动报名卡片、导航链接及原计划详细说明。快照价格／余位与预订状态分别记录；更新计划时同步修改相关日期、费用、说明与版本日期。
+- `source/new-zealand/index.md`：页面元信息。
+- `themes/almostkhan/layout/travel.ejs`：独立页面模板，使用本地 `travel.css` 与 `travel.js`，不加载博客的第三方库、图片背景或字体。
+- 所有行程在构建时生成，关闭 JavaScript 仍可阅读；打印按钮会展开详情。该页面不接入实时库存，不创建订单。
+
+在 `npm run server` 后访问 http://localhost:4000/new-zealand/ 预览。

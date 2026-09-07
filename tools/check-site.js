@@ -16,7 +16,7 @@ function read(file) { return fs.readFileSync(path.join(root, file), 'utf8'); }
 const files = walk(root);
 const pages = files.filter(file => file.endsWith('.html'));
 assert(pages.length > 0, 'No HTML pages generated');
-for (const required of ['index.html', 'about/index.html', 'tags/index.html', 'categories/index.html', 'archives/index.html',
+for (const required of ['index.html', 'about/index.html', 'tags/index.html', 'categories/index.html', 'archives/index.html', 'new-zealand/index.html',
   '2025/06/29/viewcontroller-containment/index.html', '2026/03/25/optimizing-images/index.html']) {
   assert(read(required).trim(), `${required} is empty`);
 }
@@ -45,4 +45,15 @@ for (const xml of ['sitemap.xml', 'baidusitemap.xml', 'atom.xml', 'search.xml'])
   assert(!data.includes('http://almostkhan.me'), `${xml}: HTTP site URLs`);
 }
 assert(!files.some(file => /\/(?:aplayer|statics)\//.test(file)), 'Unused music assets published');
+const trip = require('../source/_data/new_zealand.json');
+const travel = read('new-zealand/index.html');
+for (const day of trip.days) {
+  assert(travel.includes(`id="${day.id}"`), `Missing travel day: ${day.date}`);
+  assert(day.schedule.length > 0, `Missing schedule: ${day.date}`);
+}
+for (const booking of trip.bookings) {
+  assert(travel.includes(`id="booking-${booking.id}"`), `Missing booking details: ${booking.title}`);
+}
+assert(!/<(?:script|link)[^>]+(?:src|href)="(?:https?:)?\/\//.test(travel.replace(/<link rel="canonical"[^>]*>/g, '')),
+  'Travel page should not depend on external scripts or styles');
 console.log(`Site checks passed: ${pages.length} HTML pages, local links, stable URLs, SEO and feed checks.`);
