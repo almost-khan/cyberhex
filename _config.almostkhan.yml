@@ -1,6 +1,5 @@
 version: '1.4.9.4'
 menu:
-  新西兰路书: /new-zealand/
   关于: /about/
   分类: /categories/
   标签: /tags/

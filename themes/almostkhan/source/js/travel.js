@@ -25,3 +25,24 @@ window.addEventListener('beforeprint', () => {
 window.addEventListener('afterprint', () => {
   closedDetails.forEach(detail => { detail.open = false; });
 });
+
+// Highlight the current chapter in the sticky section nav.
+const navLinks = [...document.querySelectorAll('.section-nav a')];
+const chapters = navLinks
+  .map(link => document.querySelector(link.hash))
+  .filter(Boolean);
+if ('IntersectionObserver' in window && chapters.length) {
+  const seen = new Set();
+  const chapterObserver = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) seen.add(entry.target.id);
+      else seen.delete(entry.target.id);
+    }
+    const current = chapters.find(chapter => seen.has(chapter.id));
+    for (const link of navLinks) {
+      if (current && link.hash === '#' + current.id) link.setAttribute('aria-current', 'true');
+      else link.removeAttribute('aria-current');
+    }
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  chapters.forEach(chapter => chapterObserver.observe(chapter));
+}
