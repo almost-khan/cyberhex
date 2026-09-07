@@ -1,0 +1,54 @@
+version: '1.4.9.4'
+menu:
+  关于: /about/
+  分类: /categories/
+  标签: /tags/
+  归档: /archives/
+page_titles:
+  categories: 分类
+  tags: 标签
+  archives: 归档
+socials:
+  github: https://github.com/almost-khan
+  twitter: ''
+  stackoverflow: ''
+TOC: true
+welcome_cover: /img/cover.jpg
+cover: /img/welcome-cover.jpg
+avatar: /img/profile.jpg
+favicon: /img/favicon.png
+scrollbar: false
+descriptionOne: 'Simple(r) Always Wins.'
+descriptionTwo: ''
+rss: /atom.xml
+post_navigation: true
+autoplay: false
+mp3: []
+aplayer:
+  enable: false
+gitalk:
+  enable: false
+valine:
+  enable: false
+busuanzi:
+  enable: false
+sharejs:
+  enable: false
+symbols_count_time:
+  enable: true
+  wordCount: true
+  readCount: true
+  awl: 4
+  wpm: 275
+  suffix: 分钟
+html_truncate:
+  enable: false
+codemirror:
+  modes: []
+mathjax: false
+beian:
+  enable: false
+police:
+  enable: false
+mouse:
+  enable: false

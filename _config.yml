@@ -9,11 +9,12 @@ description: Simple(r) Always Wins.
 keywords:
 author: Penstein
 language: zh-CN
-timezone:
+timezone: Asia/Shanghai
+updated_option: date
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://almostkhan.me
+url: https://almostkhan.me
 root: /
 permalink: :year/:month/:day/:title/ 
 permalink_defaults:
@@ -76,7 +77,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: obsidian
+theme: almostkhan
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -91,33 +92,12 @@ search:
   format: html
   limit: 10000
 
-# hexo-tag-cloud
-tag_cloud:
-    textFont:
-    textColour: #222222
-    textHeight: 15
-    outlineColour: #FFFFFF
-
+# robots.txt is maintained in source/robots.txt.
 sitemap:
   path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
 
-
-robotstxt:
-  useragent: "*"
-  disallow:
-    - /js/
-    - /css/
-    - /images/
-    - /lib/
-    - /google85ad5554e233f6cc.html
-  allow:
-    - /
-    - /archives/
-    - /categories/
-    - /tags/
-    - /about/
-    - /2018/
-  sitemap: /sitemap.xml
- 
+# Compress styles during rendering; no separate Gulp step.
+stylus:
+  compress: true

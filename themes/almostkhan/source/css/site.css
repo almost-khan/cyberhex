@@ -1,0 +1,24 @@
+/* Content remains readable when scripts or animation CDNs are unavailable. */
+body.loading #container, body.loading #single, body.loading .nav { opacity: 1; }
+html.loading, body.loading { height: auto; overflow: auto; }
+.loader { display: none !important; }
+.content.markdown { font-weight: 400; line-height: 1.9; }
+.content img { max-width: 100%; height: auto; }
+.content .highlight { overflow-x: auto; background: #181621; padding: 1rem; border-radius: 8px; }
+.content .highlight table { margin: 0; width: auto; }
+.content .highlight td { border: 0; padding: 0; }
+.content .highlight .gutter { padding-right: 1rem; color: #aaa; user-select: none; }
+.content .highlight pre { margin: 0; padding: 0; background: transparent; color: #eee; }
+.content .highlight .keyword, .content .highlight .type { color: #d9a7ff; }
+.content .highlight .string { color: #b4e88a; }
+.content .highlight .comment { color: #aaa; }
+.content .highlight .number, .content .highlight .literal { color: #ffc38a; }
+.content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+button.iconfont { background: transparent; border: 0; color: inherit; cursor: pointer; font-size: inherit; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid #0ed2f7; outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+noscript nav { padding: 1rem; text-align: center; background: #100e17; }
+noscript nav a { color: #0ed2f7; }

@@ -1,0 +1,28 @@
+<%
+const description = page.description || (is_post() ? truncate(strip_html(page.content), {length: 160}) : config.description);
+const canonical = full_url_for(page.path || '');
+%>
+<!DOCTYPE html>
+<html lang="<%= config.language %>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= page_title() %></title>
+  <meta name="description" content="<%= description %>">
+  <meta name="author" content="<%= config.author %>">
+  <link rel="canonical" href="<%= canonical %>">
+  <meta property="og:type" content="<%= is_post() ? 'article' : 'website' %>">
+  <meta property="og:title" content="<%= page.title || config.title %>">
+  <meta property="og:description" content="<%= description %>">
+  <meta property="og:url" content="<%= canonical %>">
+  <meta property="og:site_name" content="<%= config.title %>">
+  <meta property="og:image" content="<%= full_url_for(page.cover || theme.cover) %>">
+  <meta name="twitter:card" content="summary_large_image">
+  <% if (is_post()) { %>
+  <meta property="article:published_time" content="<%= date_xml(page.date) %>">
+  <meta property="article:modified_time" content="<%= date_xml(page.updated || page.date) %>">
+  <% } %>
+  <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
+  <link rel="icon" href="<%= url_for(theme.favicon) %>">
+  <%- css(['https://at.alicdn.com/t/font_1429596_nzgqgvnmkjb.css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css', 'css/obsidian.css', 'css/site.css']) %>
+</head>
