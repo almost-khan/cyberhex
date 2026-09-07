@@ -26,4 +26,4 @@ Marin 老哥的博客关注很久了，每次都是碰到问题会去看，这�
 ## Tips
 ## Share
 
-[跨端开发的终极解决方案？- Flutter 学习历程之环境配置采坑记录](https://almostkhan.me/2020/05/16/flutter-setup/)
+跨端开发的终极解决方案？- Flutter 学习历程之环境配置采坑记录（原文暂缺）

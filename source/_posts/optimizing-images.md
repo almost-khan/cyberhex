@@ -1,9 +1,9 @@
 ---
 title: 优化图片
+date: 2026-03-25 12:00:00
 tags: [Swift, iOS, Design Pattern]
 categories: 
 - 翻译
-visible: hide
 ---
 
 > 作者：Jordan Morgan，[原文链接](https://www.swiftjectivec.com/optimizing-images/)，原文日期：2018-12-11

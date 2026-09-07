@@ -42,4 +42,4 @@ func testImage() {
 
 ## Share
 
-[尤尼泰斯特 2020 - 回忆篇](https://almostkhan.me/2020/07/05/unit-test-short-story-01/)
+尤尼泰斯特 2020 - 回忆篇（原文暂缺）
