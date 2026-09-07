@@ -21,4 +21,4 @@ visible: hide
 ## Tips
 ## Share
 
-[A song of TDD and BUG - 主歌](https://cyberhex.me/2020/07/07/tdd-part-two/)
+[A song of TDD and BUG - 主歌](https://almostkhan.me/2020/07/07/tdd-part-two/)

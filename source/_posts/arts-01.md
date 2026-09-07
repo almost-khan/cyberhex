@@ -40,4 +40,4 @@ class ViewController: UIViewController {
 
 ## Share
 
-[都是 Apple 惹的祸 - Coordinator Pattern 的前世今生](https://cyberhex.me/2020/04/26/coodinator-pattern/)
+[都是 Apple 惹的祸 - Coordinator Pattern 的前世今生](https://almostkhan.me/2020/04/26/coodinator-pattern/)

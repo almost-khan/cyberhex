@@ -7,7 +7,7 @@ visible: hide
 ---
 
 > 作者：Jordan Morgan，[原文链接](https://www.swiftjectivec.com/optimizing-images/)，原文日期：2018-12-11
-译者：CyberHex；
+译者：AlmostKhan；
 
 人们常说你手里的相机就是最好的那个。如果俗语能说明一些问题的话，那么毫无疑问，iPhone 完全就是这个星球上最重要的相机。而且整个行业也证明了这件事。
 

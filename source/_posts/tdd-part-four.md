@@ -7,7 +7,7 @@ tags: [TDD, iOS]
 categories:
 - 工作总结
 ---
-TDD 与 BUG 的爱恨情仇（卷四），本系列链表头部请戳 [A song of TDD and BUG - 前奏曲](https://cyberhex.me/2020/06/14/tdd-part-one/)
+TDD 与 BUG 的爱恨情仇（卷四），本系列链表头部请戳 [A song of TDD and BUG - 前奏曲](https://almostkhan.me/2020/06/14/tdd-part-one/)
 <!--more-->
 
 ## All About Change

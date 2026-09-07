@@ -58,7 +58,7 @@ GCD 中队列指的是任务的等待队列，也就是在任务进入线程执�
 首先我们先看自创队列：
 {% codeblock lang:swift %}
 // Swift
-let backgroundQueue = DispatchQueue(label: "com.cyberhex.concurrent.queue", attributes: .concurrent)
+let backgroundQueue = DispatchQueue(label: "com.almostkhan.concurrent.queue", attributes: .concurrent)
 {% endcodeblock %}
 
 上边就是创建队列的过程，DispatchQueue 的构造函数需要好多个参数，但是除了 label 其他的都是可选参数（如下），一般来说创建的队列都是并行队列。

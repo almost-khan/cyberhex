@@ -63,7 +63,7 @@ TDD 与 BUG 的爱恨情仇（卷一）
 
 众所周知，所谓赛博朋克就是高科技，低生活。那套用在这里就是用一个特别傻的项目去演示一个特别 fancy 的概念。所以贯穿整个系列我都会用一个天气的项目叫做 [Rainstorm](https://github.com/quintessencegpy/Rainstorm) 来展示单测和 TDD 的概念，这个项目不是我的原创，是我在学习 MVVM 的时候跟着 [cococast.com](https://cocoacasts.com/) 一起做的，这个不是广告，只是既然用了人家的东西，总得给人家一个名分，嗯嗯。
 
-如果你对我说的这些都感兴趣，那就跟着我的节奏一起摇摆（不好意思，走错片场了），跟着我的步伐一起深入了解 TDD，欢迎观看下一集 [A song of TDD and BUG - 主歌](https://cyberhex.me/2020/07/07/tdd-part-two/)。
+如果你对我说的这些都感兴趣，那就跟着我的节奏一起摇摆（不好意思，走错片场了），跟着我的步伐一起深入了解 TDD，欢迎观看下一集 [A song of TDD and BUG - 主歌](https://almostkhan.me/2020/07/07/tdd-part-two/)。
 
 ## 相关链接
 

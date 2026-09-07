@@ -19,4 +19,4 @@ visible: hide
 ## Tips
 ## Share
 
-[A song of TDD and BUG - 副歌](https://cyberhex.me/2020/07/07/tdd-part-three/)
+[A song of TDD and BUG - 副歌](https://almostkhan.me/2020/07/07/tdd-part-three/)

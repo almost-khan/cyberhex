@@ -39,4 +39,4 @@ button.addTarget(self, action: .didTapButton, for: .touchUpInside)
 真的看起来舒服很多！
 ## Share
 
-[A song of TDD and BUG - 前奏曲](https://cyberhex.me/2020/06/14/tdd-part-one/)
+[A song of TDD and BUG - 前奏曲](https://almostkhan.me/2020/06/14/tdd-part-one/)

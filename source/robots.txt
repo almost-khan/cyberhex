@@ -11,5 +11,5 @@ Disallow: /css/
 Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
-Sitemap: https://cyberhex.me/sitemap.xml
-Sitemap: https://cyberhex.me/baidusitemap.xml
+Sitemap: https://almostkhan.me/sitemap.xml
+Sitemap: https://almostkhan.me/baidusitemap.xml

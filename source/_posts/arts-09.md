@@ -63,4 +63,4 @@ class Solution:
 
 ## Share
 
-[CreateML - 开启革命的星星之火](https://cyberhex.me/2020/11/24/create-ml-introduction/)
+[CreateML - 开启革命的星星之火](https://almostkhan.me/2020/11/24/create-ml-introduction/)

@@ -7,7 +7,7 @@ tags: [TDD, iOS]
 categories:
 - 工作总结
 ---
-TDD 与 BUG 的爱恨情仇（卷二），本系列链表头部请戳 [A song of TDD and BUG - 前奏曲](https://cyberhex.me/2020/06/14/tdd-part-one/)
+TDD 与 BUG 的爱恨情仇（卷二），本系列链表头部请戳 [A song of TDD and BUG - 前奏曲](https://almostkhan.me/2020/06/14/tdd-part-one/)
 <!--more-->
 
 ## FBI Warning
@@ -450,7 +450,7 @@ RxTest 更加全面，可以覆盖大部分测试，而且 TestScheduler 模拟�
 
 这一篇主要讲了关于单测的东西，单测作为 TDD 的根基，是学习 TDD 路上必须要掌握的生存技能。不过对于许多人来说只掌握单测其实就足够了，因为 TDD 只是一种开发模式，而单测才是根本。你也可以在掌握了单测后根据自己或团队的 workflow 来定制属于自己的开发模式。如果你对 TDD 比较好奇的话，也可以继续往下看。
 
-[To Be Continued](https://cyberhex.me/2020/07/07/tdd-part-three/)（此处应有专属音乐）
+[To Be Continued](https://almostkhan.me/2020/07/07/tdd-part-three/)（此处应有专属音乐）
 
 ## 相关链接
 
