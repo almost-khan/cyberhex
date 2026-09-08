@@ -56,4 +56,15 @@ for (const booking of trip.bookings) {
 }
 assert(!/<(?:script|link)[^>]+(?:src|href)="(?:https?:)?\/\//.test(travel.replace(/<link rel="canonical"[^>]*>/g, '')),
   'Travel page should not depend on external scripts or styles');
+const wishlist = read('new-zealand/wishlist/index.html');
+const wishes = require('../source/_data/new_zealand_wishlist.json');
+assert.equal(wishes.items.length, 17, 'Wishlist must preserve all 17 wishes');
+for (const item of wishes.items) {
+  assert(wishlist.includes(`id="wish-${item.id}"`), `Missing wish: ${item.id}`);
+}
+assert(travel.includes('href="/new-zealand/wishlist/"'), 'Missing wishlist entry in itinerary');
+for (const page of [travel, wishlist]) assert(page.includes('content="noindex, nofollow"'), 'Travel pages must remain unindexed');
+for (const file of ['index.html', 'sitemap.xml', 'baidusitemap.xml', 'search.xml', 'atom.xml']) {
+  assert(!read(file).includes('/new-zealand/'), `${file}: unlisted travel pages exposed`);
+}
 console.log(`Site checks passed: ${pages.length} HTML pages, local links, stable URLs, SEO and feed checks.`);

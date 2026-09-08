@@ -65,3 +65,13 @@ npx hexo deploy
 - 所有行程在构建时生成，关闭 JavaScript 仍可阅读；打印按钮会展开详情。该页面不接入实时库存，不创建订单。
 
 在 `npm run server` 后访问 http://localhost:4000/new-zealand/ 预览。
+
+### 景点愿望排序
+
+路书章节导航可打开 `/new-zealand/wishlist/`，可将此链接手动发给同行朋友。仍不进入博客首页、搜索、订阅和站点地图。
+
+- `source/_data/new_zealand_wishlist.json`：2026-09-08 愿望清单快照，保留 17 项及新增项目的详细说明；不实时查询预约。
+- `themes/almostkhan/layout/wishlist.ejs` 与 `source/css/wishlist.css`、`source/js/wishlist.js`（后两者位于主题目录）：页面、样式及排序交互。
+- 支持 1–17 名、并列、不想去和未决定，以及品酒／三文鱼版本和备注。普通页面自动保存至浏览器 localStorage；分享结果通过 URL fragment 携带，不上传服务器，不自动汇总。朋友需手动把结果链接或文字发回群里。
+- 打开结果链接不会覆盖本机草稿。修改分享结果后需重新复制链接；链接接收者可读取其中的称呼与备注。复制权限不可用时提供文本框手动复制。
+- 本地预览：`npm run server` 后打开 http://localhost:4000/new-zealand/wishlist/。

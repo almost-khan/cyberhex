@@ -33,7 +33,7 @@ layout: false
 </div>
 </section>
 <div class="status-strip"><span class="status-dot"></span><p><strong>路线已定，预订尚未锁位。</strong>依据 <%= trip.updated %> 的计划与查询记录整理；余位、价格不是实时结果。新西兰时刻为 NZDT（中国＋5小时），国际航段显示各地当地时间。</p></div>
-<nav class="section-nav" aria-label="页面章节"><a href="#timeline">每日时间线</a><a href="#bookings">活动报名 <span>06</span></a><a href="#driving">车程与导航</a><a href="#flights">航班与分组</a><a href="#stay">住宿与租车</a><a href="#prepare">预算与待办</a></nav>
+<nav class="section-nav" aria-label="页面章节"><a href="/new-zealand/wishlist/">景点愿望排序 ↗</a><a href="#timeline">每日时间线</a><a href="#bookings">活动报名 <span>06</span></a><a href="#driving">车程与导航</a><a href="#flights">航班与分组</a><a href="#stay">住宿与租车</a><a href="#prepare">预算与待办</a></nav>
 <section class="attention" aria-label="关键衔接提醒"><article><span>01 / 紧衔接</span><h2>10/2：航班、取车、观星一起确认</h2><p>早班落地后首次左驾，21:10需到观星基地。蒂卡波只有一晚，延误不能靠疲劳夜驾追回。</p></article><article><span>02 / 分组行动</span><h2>10/8：朋友先走，其余人继续</h2><p>朋友优先上午飞奥克兰；其余人箭镇半日后北返。上午班尚未确认，不擅自弃乘拼接票首段。</p></article><article><span>03 / 待决定</span><h2>10/9：约15.5小时在外</h2><p>两场目标导览须同时确认。纯驾驶约6—7小时，自驾还是带司机仍待同行人选择，睡眠余量偏紧。</p></article></section>
 <section id="timeline" class="chapter"><div class="section-heading"><div><p class="eyebrow">01 / DAY BY DAY</p><h2>每天怎么走，都在这里。</h2></div><p>时间线是执行模型。<br>真实航班、酒店和订单确认后整体校正。</p></div>
 <div class="timeline-layout"><aside class="day-nav" aria-label="按日期跳转"><p>12 DAYS / 2026</p><% trip.days.forEach(day => { %><a href="#<%= day.id %>"><time datetime="<%= day.date %>"><%= day.short %></time><span><%= day.place.split(' → ')[0] %></span></a><% }) %></aside><div class="days">

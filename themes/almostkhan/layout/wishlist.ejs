@@ -1,0 +1,31 @@
+---
+layout: false
+---
+<% const wish = site.data.new_zealand_wishlist; %>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title><%= page.title %> · AlmostKhan</title>
+<meta name="description" content="<%= page.description %>"><meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="<%= full_url_for(page.path) %>"><link rel="icon" href="<%= url_for(theme.favicon) %>">
+<link rel="stylesheet" href="/css/travel.css"><link rel="stylesheet" href="/css/wishlist.css">
+<script defer src="/js/wishlist.js"></script>
+</head>
+<body>
+<header class="sitebar"><a class="brand" href="/new-zealand/">← 新西兰路书</a><span class="edition">WISH LIST / 2026</span></header>
+<main class="wish-main">
+<section class="wish-hero"><p class="eyebrow">17 EXPERIENCES · YOUR CALL</p><h1>这一程，<br>你最想去哪里？</h1><p class="intro">先选心愿，再一起取舍。给想去的地方填名次，<br>让每个人的期待，都在这趟旅途中有个位置。</p><p>这是愿望清单，不是第二份行程。新增项目未排入日程、未下单；排完再统一调整主计划。</p><a href="#choices" class="primary">开始排序 ↓</a> <a href="#tradeoffs">先看看路线取舍 ↘</a></section>
+<details class="extra"><summary>怎么选，以及不参与排序的行程约定</summary><div class="prose"><%- travel_markdown(wish.intro) %></div></details>
+<noscript><p class="day-warning">开启 JavaScript 可以自动保存和生成分享结果。也可以直接把编号及排名发给朋友；下面的清单与说明仍可完整阅读。</p></noscript>
+<form id="wish-form">
+<section class="wish-controls" aria-label="你的信息"><label>你的称呼（选填）<input id="person" maxlength="40" placeholder="让朋友知道这是谁的选择" autocomplete="nickname"></label><p>名次 1–17，1 最想去；允许并列，也可选“不想去”。留空表示还没决定。默认编号顺序不代表推荐。</p><p id="save-status" role="status">开启脚本后，填写内容仅自动保存在当前浏览器。分享结果需手动发给朋友，不会自动提交或汇总。</p></section>
+<section id="choices"><div class="wish-section-title"><h2>我的 17 个愿望</h2><button type="button" id="sort" hidden>按我的名次排列</button></div><p>时间是规划额度，不是实时导航或可售承诺。当地游玩与跨城移动分开看，共用交通不要重复相加。</p><div class="wish-grid" id="wish-grid">
+<% wish.items.forEach(item => { %><article class="wish-card" id="wish-<%= item.id %>" data-id="<%= item.id %>" data-title="<%= item.title %>"><div class="wish-card-top"><span class="eyebrow"><%= item.id %> / <%= item.id.startsWith('S') ? '南岛' : '北岛' %></span><label>你的排名<select name="<%= item.id %>" aria-label="<%= item.id %> <%= item.title %> 的排名"><option value="">未决定</option><% for(let n=1;n<=17;n++){ %><option value="<%= n %>"><%= n %><%= n===1?' · 最想去':'' %></option><% } %><option value="skip">不想去</option></select></label></div><h3><%= item.title %></h3><p class="wish-state"><%= item.status %></p><dl><dt>游玩时间</dt><dd><%= item.duration %></dd><dt>移动与取舍</dt><dd><%= item.cost.replace('见 §3','见下方详细说明') %></dd></dl><% if(['S12','S13','S14'].includes(item.id)){ %><a href="#tradeoffs">查看新愿望详细核实与路线代价 ↓</a><% } %></article><% }) %>
+</div></section>
+<section class="wish-options"><h2>再选两个小细节</h2><label>如果去 Rippon，你更想选<select id="wine"><option value="未决定">未决定</option><option>普通品酒</option><option>私人品酒</option><option>不品酒，同行</option></select></label><label>三文鱼的版本<select id="salmon"><option value="未决定">未决定</option><option>一家即可，按路线选</option><option>High Country Salmon</option><option>Mt Cook Alpine Salmon</option><option>想比较两家</option></select></label><label>补充想法<textarea id="note" maxlength="1000" rows="3" placeholder="比如必去项、愿意放弃什么、北岛两项是否都保留……"></textarea></label></section>
+<section class="wish-share" id="share" hidden><p class="eyebrow">PASS IT ON</p><h2>选好了，发回群里。</h2><p id="progress"></p><p>“分享我的结果”链接包含你的称呼、选择和备注；打开即可查看。发空白清单给朋友，让他们各自填写。</p><div class="wish-actions"><button type="button" id="share-result">分享我的结果链接</button><button type="button" id="copy-text">复制结果文字</button><button type="button" id="share-blank">复制空白清单链接</button><button type="button" id="reset">清空我的选择</button></div><label>结果预览（复制失败时可手动选取）<textarea id="result" rows="10" readonly></textarea></label><p id="share-status" role="status" aria-live="polite"></p></section>
+</form>
+<section id="tradeoffs" class="wish-details"><p class="eyebrow">BEFORE WE CHANGE THE ROUTE</p><h2>心愿背后，要留出多少时间？</h2><p>保留原文核实说明，记录日期 <%= wish.updated %>。营业、价格和场次均为当时记录，本页未重新查询十月余位。</p><div class="prose"><%- travel_markdown(wish.details) %></div></section>
+<footer class="travel-footer"><p>整理自《景点愿望清单与排序》 · <%= wish.updated %></p><a href="/new-zealand/">← 回到路书，查看当前时间线</a></footer>
+</main></body></html>

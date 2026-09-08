@@ -1,0 +1,143 @@
+{
+  "updated": "2026-09-08",
+  "intro": "在“你的排名”填 1、2、3……，同等喜欢可并列，不想去填“删”。编号只是沟通用，不代表推荐顺序。“已有偏好”保留之前说过的意愿，不替你作最终排序。\n\n也可直接发：`必去：S01、N01……；优先：……；能删：……`。品酒、三文鱼分别先按一个愿望排序，具体版本再选，避免把两个店误当成两项必去。\n\n不参与景点排序的约束：先南岛后北岛；10/8 在皇后镇附近衔接朋友离境；其余人 10/8 晚北返、10/10 21:00 从奥克兰回国的现有模型；不陪送朋友。基督城机场、Twizel 住宿、Cromwell 公路中转也不是必须打卡的景点。",
+  "items": [
+    {
+      "rank": "",
+      "id": "S01",
+      "title": "米尔福德峡湾 Milford Sound：大巴＋游船",
+      "status": "明确非常想去；现排 10/6",
+      "duration": "团内约 13h；酒店门到门约 14.5h",
+      "cost": "皇后镇往返公路约 580km；整天占用，不能叠加企鹅或酒庄"
+    },
+    {
+      "rank": "",
+      "id": "S02",
+      "title": "蒂卡波 Crater 英文观星",
+      "status": "已排 10/2；非 Mt John 山顶版",
+      "duration": "活动 75min，酒店往返留 2.5h",
+      "cost": "只有一晚自然窗口；与首日航班、取车、长途驾驶绑定"
+    },
+    {
+      "rank": "",
+      "id": "S03",
+      "title": "蒂卡波湖边＋好牧羊人教堂外观",
+      "status": "已排 10/2",
+      "duration": "约 1h",
+      "cost": "与住宿同一区；飞机晚点会压缩本项，不把教堂外观写成室内开放保证"
+    },
+    {
+      "rank": "",
+      "id": "S04",
+      "title": "库克山 Hooker Valley 徒步",
+      "status": "已排 10/3",
+      "duration": "往返约 10km，留 4h 含拍照简餐",
+      "cost": "Tekapo→White Horse Hill 约 1.5h；返 Twizel 约 50min，停车另计；不是顺路半小时打卡"
+    },
+    {
+      "rank": "",
+      "id": "S05",
+      "title": "普卡基湖 Lake Pukaki 观景",
+      "status": "已排 10/3 回程",
+      "duration": "约 30–60min，含在现有回程停靠中",
+      "cost": "只选 SH80／SH8 合法停靠点；可与湖畔三文鱼店合并，不额外绕湖"
+    },
+    {
+      "rank": "",
+      "id": "S06",
+      "title": "瓦纳卡湖边＋孤独的树 That Wānaka Tree",
+      "status": "已排 10/4",
+      "duration": "约 1–1.5h；原日程另有镇内闲逛",
+      "cost": "Twizel→Wānaka 约 143km，移动含休息留 3h；与 Rippon 在同一区，但不是同一个点"
+    },
+    {
+      "rank": "",
+      "id": "S07",
+      "title": "皇后镇花园／湖边／镇内",
+      "status": "已排 10/5",
+      "duration": "约 2h，可缩短",
+      "cost": "皇后镇当地活动；可为文化表演或路线重排让时间"
+    },
+    {
+      "rank": "",
+      "id": "S08",
+      "title": "Ahi Kā Haka & Hāngī：毛利文化、战舞、传统餐",
+      "status": "明确想看文化表演；现拟 10/5 17:00",
+      "duration": "产品约 2h，另留交通签到约 1–1.5h",
+      "cost": "皇后镇；指定日期场次、集合点未确认；改走但尼丁后不能保证照接 17:00"
+    },
+    {
+      "rank": "",
+      "id": "S09",
+      "title": "格林诺奇 Glenorchy 红屋码头＋Lagoon 步道",
+      "status": "已排 10/7",
+      "duration": "当地约 2h＋午餐；含沿途停靠约半天多",
+      "cost": "皇后镇单程 45km／约 45min，计划各留 1.5h；不是去 Milford 的捷径，不含 Paradise／Routeburn"
+    },
+    {
+      "rank": "",
+      "id": "S10",
+      "title": "Skyline 缆车＋山顶观景，Luge 另选",
+      "status": "已排 10/7 下午",
+      "duration": "约 2.5h，排队可能延长",
+      "cost": "皇后镇当地；不是再开一段跨城路；日期票种与运营时段待核实"
+    },
+    {
+      "rank": "",
+      "id": "S11",
+      "title": "箭镇 Arrowtown 街区短步行",
+      "status": "已排 10/8，仅其余人",
+      "duration": "游玩 2h＋午餐；往返停车各留 1h",
+      "cost": "皇后镇单程常态 20–25min；可缩减以提前飞奥克兰，不能挤占还车值机"
+    },
+    {
+      "rank": "",
+      "id": "S12",
+      "title": "但尼丁 Blue Penguins Pukekura 小蓝企鹅归巢",
+      "status": "新增待选：帖子 1",
+      "duration": "基础团 1.5h；从但尼丁市区出发含交通签到至少留约 4h",
+      "cost": "奥塔哥半岛尽头，非皇后镇／奥马鲁；通常需但尼丁住宿一晚，会改变南岛中段路线，见 §3"
+    },
+    {
+      "rank": "",
+      "id": "S13",
+      "title": "Rippon 酒庄品酒＋湖景",
+      "status": "新增待选：帖子 2",
+      "duration": "普通品酒 30min；当地总额度 1–1.5h。私人品酒 1h，另算交通签到",
+      "cost": "Wānaka，较易替换 10/4 镇内闲逛；周日普通场与周一私人场不能混用；要安排不饮酒司机／接送"
+    },
+    {
+      "rank": "",
+      "id": "S14",
+      "title": "三文鱼：High Country Salmon／Mt Cook Alpine Salmon",
+      "status": "新增待选：帖子 3",
+      "duration": "一家约 45–60min；两家都去暂留 1.5–2h 含移动，准确导航待复核",
+      "cost": "Twizel 南侧 vs 普卡基湖南岸，两家可选其一；10/3 回程查关门时间，或 10/4 南下顺访 High Country，不默认折返买鱼再回湖边"
+    },
+    {
+      "rank": "",
+      "id": "N01",
+      "title": "霍比特村 Hobbiton Movie Set／夏尔取景地",
+      "status": "明确想去；已排 10/9",
+      "duration": "官方导览约 2.5h＋提前签到",
+      "cost": "The Shire’s Rest，非奥克兰市内；市区出发留 2.5h 驾驶含短休息，停车签到另留 30min"
+    },
+    {
+      "rank": "",
+      "id": "N02",
+      "title": "Spellbound 萤火虫双洞",
+      "status": "明确提出加入；已排 10/9 模型",
+      "duration": "约 2.5h＋至少提前 20min 签到",
+      "cost": "从 Hobbiton 驾驶预算 1h45；返回奥克兰约 3h 量级，另留餐休；两项同天目前约 15.5h 在外，疲劳仍未解决"
+    },
+    {
+      "rank": "",
+      "id": "N03",
+      "title": "奥克兰市区步行／海港街区",
+      "status": "已排 10/10，具体点位未定",
+      "duration": "约 4h 含午餐",
+      "cost": "最后一天不去远郊；15:00 开始赴机场区域，含加油还车后 18:00 到国际楼"
+    }
+  ],
+  "details": "## 3. 三个新愿望：核实结果与真实代价\n\n### S12｜小蓝企鹅：需要改变路线，不是只加 1.5 小时\n\n[朋友帖子 1：但尼丁小蓝企鹅](https://www.xiaohongshu.com/explore/6a7747e80000000025002eb0?xsec_token=CBBzQDWPOiNfZMjOer_4DVcAo79gV5bHe9GIfkYIiorvQ=&xsec_source=app_share)。已读取公开正文；作者的价格、企鹅数量和退款经验不直接当作本次承诺。\n\n官方基础体验约 1.5 小时、晚间观归巢、自行安排交通；集合于 Royal Albatross Centre，**1245 Harington Point Road**。官网建议从但尼丁市区留 **1 小时单程**。另有约 5 小时、含但尼丁交通的半岛深度团，不与基础团混算。[官网及预约](https://www.bluepenguins.co.nz/) · [产品比较](https://www.bluepenguins.co.nz/ourtours) · [FAQ](https://www.bluepenguins.co.nz/faq)\n\n关键跨城量级：\n\n| 路段 | 公共道路参考 | 实际排程应留 |\n| --- | --- | --- |\n| Twizel→但尼丁市区 | 约 253km／3h08，[道路参考](https://www.rome2rio.com/s/Twizel/Dunedin) | 约 4–4.5h 含途中休息，不含企鹅体验 |\n| 但尼丁市区→企鹅集合点 | 官网建议单程 1h；[导航入口](https://www.google.com/maps/dir/?api=1&origin=Dunedin+New+Zealand&destination=1245+Harington+Point+Road+New+Zealand&travelmode=driving) | 往返至少 2h＋签到停车；回程是晚间半岛道路 |\n| 但尼丁→皇后镇 | 约 279km／3h40，[新西兰旅游局路线参考](https://traveltrade.newzealand.com/assets/Uploads/Resources/01-General/Itineraries/Wildlife-Nature-in-the-South-Island-12-days-11-nights.pdf) | 约 4.5–5h 含餐休；不是看完企鹅再连夜开回去 |\n\n以上不是实时导航。**如果企鹅排名很高，最直接要比较的是：10/4 瓦纳卡一晚换成但尼丁一晚，10/5 再去皇后镇。** 这会影响 S06 瓦纳卡、S13 酒庄、原 Lindis Pass 路段，以及 10/5 皇后镇活动；不是只删除一小段咖啡时间。这里只说明代价，未采用这条替换，也未改住宿。\n\n不要安排皇后镇往返但尼丁夜看企鹅：仅城际往返就约 7–8 小时，另有半岛约 2 小时、观赏 1.5 小时和餐休。若同时要求瓦纳卡、酒庄、企鹅全部保留，需要整体重排并删掉别的时间块，不能硬塞。也不默认以奥马鲁企鹅替换朋友发的具体地点。\n\n**预约状态：**已核实产品和地址，未选择最终游览日期，未查得本队人数的具体场次、最终价和余位。晚间开始时间必须随日期查看；不能把别人四月时间或照片里的企鹅数写进十月保证。\n\n### S13｜Rippon：普通品酒较好加，私人品酒有日期冲突\n\n[朋友帖子 2：Rippon 酒庄](https://www.xiaohongshu.com/explore/69ca57120000000021012af6?xsec_token=CBSN8mYchTbgR3R5zr2y5vNdB1aiNDgwxA_RoeGWIk980=&xsec_source=app_share) · [官方说明及预约日历](https://rippon.co.nz/pages/tastings)\n\n9/8 官网页面：普通 Cellar Door 品酒免费、约 30 分钟、每场最多 6 位品酒客，必须预约；私人品酒约 1 小时、NZ$45／人、2–20 人，当前写 **周一至周五 11:00**，与帖子“仅周一／周三”不同。价格为公开说明，未查到十月指定日期余位。园区不开放纯观光，不能直接照搬帖子“随便躺一下午”。地址 **246 Wānaka–Mount Aspiring Road**，司机不饮酒或另订接送；预约中注明同行不品酒的人。\n\n- **现有路线优先可查 10/4 周日下午普通场**：替换原 15:30–18:00 的部分湖畔／镇内闲逛，先预留当地门到门 1–1.5h。市区到酒庄暂留每程 15–20min 含停车，是额度而非核实车程；[准确终点导航](https://www.google.com/maps/dir/?api=1&origin=Wanaka+New+Zealand&destination=Rippon+246+Wanaka+Mount+Aspiring+Road+New+Zealand&travelmode=driving)。具体酒店和接送未定，不能写成已无缝加入。\n- **若一定要 Private Tasting**：最近匹配规则的是 10/5 周一 11:00 候选，结束后再吃饭、经 Cromwell 去皇后镇，会取消／压缩原镇内活动，并重查 17:00 文化场衔接；当天驾驶人不能参加饮酒。不是周日普通场的同价升级，也未确认有位。\n- 超过 6 位要品酒时不能默认普通场能全员同场；先看人数和日历，不擅自拆队。\n\n### S14｜三文鱼：按路线和营业时间选，不照搬折返吃法\n\n[朋友帖子 3：两家三文鱼对比](https://www.xiaohongshu.com/explore/69f17005000000002301542d?xsec_token=CBnsZKEp6k5Hyt-UwwmyvLSS2FXrz1UPNhJaBmOmzCzG8=&xsec_source=app_share)。口味是作者主观体验，不据此判定任何一家食品质量有问题。\n\n| 版本 | 官方位置与当前营业说明 | 在本路线中的候选放法 |\n| --- | --- | --- |\n| High Country Salmon | 2602 Twizel–Omarama Highway，Twizel 南侧约 3km；鱼店 09:00–17:30，Logans 餐厅 10:00–19:00、点餐至 18:30。[官网](https://www.highcountrysalmon.co.nz/pages/about-us-1) | 10/4 离开 Twizel 向南时买鱼／短停较顺路；若要正式餐厅用餐，不能套用鱼店 09:00 开门时间。或查 10/3 晚餐接待；不保证未预约能有座 |\n| Mt Cook Alpine Salmon 湖畔店 | Lake Pukaki Visitor Centre，SH8，Twizel 北侧约 10km；当前每天 09:00–17:00，天气可能影响。[官网](https://alpinesalmon.co.nz/visit-us/) | 10/3 库克山回 Twizel 时结合湖边停留；必须倒推 17:00 关门，徒步延误就不保证赶上。不是位于 Mount Cook Village 的店 |\n\n两家位于 Twizel 两侧。帖子的“先 High Country 买，再开到 Mt Cook 湖边吃”对我们可能造成折返，不能照抄“12 分钟”就当全部成本；[两店准确端点导航](https://www.google.com/maps/dir/?api=1&origin=High+Country+Salmon+2602+Twizel+Omarama+Highway+New+Zealand&destination=Mt+Cook+Alpine+Salmon+Lake+Pukaki+Visitor+Centre+New+Zealand&travelmode=driving)，尚未取得实时地图计算结果。\n\n建议先选“一家即可”还是“想比较两家”。若两家都选，可分别查 10/3 湖畔店、10/4 High Country，不强行同日折返。购物无需假设有导览票，但正式餐饮、大团接待及特殊体验需另外确认；十月营业、餐厅座位和商品库存未验证，不把当前营业说明当当天保证。\n\n## 4. 排序最影响什么\n\n- **S12 企鹅 vs S06＋S13 瓦纳卡／酒庄**：首先是住宿与跨城方向取舍，不是三项独立加时。\n- **S13 普通品酒 vs 私人品酒**：普通场可考虑周日下午；私人场可能移动周一出发时间，影响 S07／S08。\n- **N01 霍比特村＋N02 Spellbound**：现有北岛仍是长日，排序时也要选是否都保留；不能因南岛新增项目就忽略这段疲劳。\n- **S14 三文鱼 vs S05 湖边停留**：可以共享一部分时间，整体影响较小，但开门、用餐、排队仍占时。\n\n排完以后再统一改日期、酒店、机票模型和预约目标；这轮不强行把新项目排成“都能去”，也没有刷新旧项目 9/7 的库存快照。\n"
+}
