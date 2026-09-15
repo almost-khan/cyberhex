@@ -1221,3 +1221,41 @@ details[open] > summary > span { transform: rotate(135deg); }
   a[href^="http"] { text-decoration: underline; }
   .section-heading > p { max-width: 40%; }
 }
+
+/* Plan comparison — existing typography and colours, separated controls and totals. */
+[hidden] { display: none !important; }
+.plan-overview { padding: 26px var(--gutter) 0; }
+.plan-switch .eyebrow { margin-bottom: 18px; }
+.plan-tabs { display: flex; gap: 30px; border-bottom: 1px solid var(--line); }
+.plan-tabs a { display: flex; align-items: baseline; gap: 12px; padding: 0 0 14px; border-bottom: 2px solid transparent; margin-bottom: -1px; font-size: 13px; color: var(--muted); }
+.plan-tabs a strong { font-weight: 600; color: var(--ink-2); }
+.plan-tabs a span { font-size: 12px; }
+.plan-tabs a[aria-current] { border-bottom-color: var(--moss); }
+.plan-tabs a[aria-current] strong { color: var(--moss); }
+.plan-tabs a:hover { color: var(--ink); }
+.plan-costs { display: grid; grid-template-columns: 1fr 1fr; max-width: 780px; margin: 26px 0 20px; }
+.plan-costs article { padding: 0 28px 0 0; min-width: 0; }
+.plan-costs article + article { border-left: 1px solid var(--line); padding: 0 0 0 32px; }
+.cost-label { font-size: 12px; font-weight: 600; color: var(--ink-2); }
+.cost-label span { margin-left: 14px; color: var(--muted); font-size: 11px; font-weight: 400; }
+.cost-amount { font: 400 clamp(28px, 3vw, 40px)/1.4 var(--serif); font-variant-numeric: lining-nums tabular-nums; letter-spacing: -.03em; margin: 8px 0 4px; white-space: nowrap; }
+.cost-amount small { font: 400 16px var(--sans); color: var(--muted); margin: 0 5px; letter-spacing: 0; }
+.cost-amount small:first-child { margin-left: 0; }
+.cost-person { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.plan-budget-note { font-size: 11px; line-height: 1.9; color: var(--faint); max-width: 780px; }
+.plan-budget-note span { display: block; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media(max-width:760px) {
+  .plan-overview { padding-top: 20px; }
+  .plan-tabs { gap: 24px; }
+  .plan-tabs a { flex-direction: column; gap: 4px; }
+  .plan-tabs a span { font-size: 11px; }
+  .plan-costs { margin: 22px 0 16px; }
+  .plan-costs article { padding-right: 12px; }
+  .plan-costs article + article { padding-left: 16px; }
+  .cost-label span { display: block; margin: 3px 0 0; }
+  .cost-amount { font-size: clamp(23px, 6vw, 30px); }
+  .cost-amount small { font-size: 12px; margin: 0 2px; }
+  .cost-person { font-size: 11px; }
+}
+@media print { .plan-overview { display: none !important; } .plan-panel[hidden] { display: none !important; } }

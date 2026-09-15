@@ -57,9 +57,9 @@ npx hexo deploy
 
 ## 新西兰旅行页面
 
-页面通过 `/new-zealand/` 直接访问，不在博客菜单展示，并从 sitemap 排除、标记 noindex。内容整理自 Obsidian《新西兰旅行计划》v0.14（2026-09-07）及《预约查询结果与全部链接》；旧版反向路线与被替代的接送团不作为执行安排。
+页面通过 `/new-zealand/` 直接访问，不在博客菜单展示，并从 sitemap 排除、标记 noindex。当前支持固定住宿 Plan A / Plan B 切换比较，最终方案尚未选定。
 
-- `source/_data/new_zealand.json`：12天时间线、6个活动报名卡片、导航链接及原计划详细说明。快照价格／余位与预订状态分别记录；更新计划时同步修改相关日期、费用、说明与版本日期。
+- `source/_data/new_zealand.json`：A/B 当前结构化记录，含每日行程、活动、住宿、航班、租车与费用；通过 travel:sync 导入，页面由 travel-model 直接适配。
 - `source/new-zealand/index.md`：页面元信息。
 - `themes/almostkhan/layout/travel.ejs`：独立页面模板，使用本地 `travel.css` 与 `travel.js`，不加载博客的第三方库、图片背景或字体。
 - 所有行程在构建时生成，关闭 JavaScript 仍可阅读；打印按钮会展开详情。该页面不接入实时库存，不创建订单。
@@ -75,3 +75,20 @@ npx hexo deploy
 - 支持 1–17 名、并列、不想去和未决定，以及品酒／三文鱼版本和备注。普通页面自动保存至浏览器 localStorage；分享结果通过 URL fragment 携带，不上传服务器，不自动汇总。朋友需手动把结果链接或文字发回群里。
 - 打开结果链接不会覆盖本机草稿。修改分享结果后需重新复制链接；链接接收者可读取其中的称呼与备注。复制权限不可用时提供文本框手动复制。
 - 本地预览：`npm run server` 后打开 http://localhost:4000/new-zealand/wishlist/。
+
+
+### A/B structured travel data
+
+`source/_data/new_zealand.json` is a committed snapshot of the active A/B records. Import the canonical Obsidian JSON explicitly:
+
+```sh
+npm run travel:sync -- /path/to/新西兰旅行_PlanA_PlanB.json
+npm run test:travel
+npm run build
+```
+
+The importer validates lodging continuity, totals and cruise-only travel, includes active A/B only, and preserves presentation settings. It does not read a hardcoded personal path during builds. `tools/travel-model.js` adapts this snapshot for EJS without maintaining a separate itinerary; dates, lodging, flights, activities and budgets come from the records.
+
+`presentation.mode: compare`, `defaultPlanId: A`, `selectedPlanId: null` enable comparison. A URL such as `/new-zealand/?plan=B` shares the displayed plan. Switching does not confirm the trip or create a booking. Only after the group selects a plan, set `mode: final` and `selectedPlanId` to A or B; rendering then includes only that plan. Existing noindex/unlisted boundaries remain.
+
+Both plans are rendered for no-JavaScript reading. With JavaScript, only the displayed plan is visible and printed. The existing styles are retained; the plan selector uses the same design tokens. Wishlist research retains its historical content with a current-plan notice.

@@ -47,13 +47,22 @@ for (const xml of ['sitemap.xml', 'baidusitemap.xml', 'atom.xml', 'search.xml'])
 assert(!files.some(file => /\/(?:aplayer|statics)\//.test(file)), 'Unused music assets published');
 const trip = require('../source/_data/new_zealand.json');
 const travel = read('new-zealand/index.html');
-for (const day of trip.days) {
-  assert(travel.includes(`id="${day.id}"`), `Missing travel day: ${day.date}`);
-  assert(day.schedule.length > 0, `Missing schedule: ${day.date}`);
+const { model } = require('./travel-model');
+const view = model(trip);
+for (const plan of view.variants) {
+  assert(travel.includes(`data-plan="${plan.id}"`));
+  for (const day of plan.days) {
+    assert(travel.includes(`id="${day.id}"`), `Missing ${plan.id} day ${day.date}`);
+    assert(day.schedule.length > 0);
+  }
+  for (const booking of plan.bookings) assert(travel.includes(`id="booking-${booking.id}"`));
+  for (const stay of plan.stays) assert(travel.includes(`id="stay-${stay.id}"`));
 }
-for (const booking of trip.bookings) {
-  assert(travel.includes(`id="booking-${booking.id}"`), `Missing booking details: ${booking.title}`);
-}
+const ids = [...travel.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
+assert.equal(new Set(ids).size, ids.length, 'Duplicate travel DOM IDs');
+for (const anchor of travel.matchAll(/href="#([^"]+)"/g)) assert(ids.includes(anchor[1]), `Missing anchor ${anchor[1]}`);
+assert(!travel.includes('milford-sound-day-trip-from-'), 'Rejected coach linked on current travel page');
+assert(!travel.includes('A1/B1'), 'Rejected variants exposed');
 assert(!/<(?:script|link)[^>]+(?:src|href)="(?:https?:)?\/\//.test(travel.replace(/<link rel="canonical"[^>]*>/g, '')),
   'Travel page should not depend on external scripts or styles');
 const wishlist = read('new-zealand/wishlist/index.html');
