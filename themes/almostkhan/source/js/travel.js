@@ -2,6 +2,7 @@
 // Pre-render both plans for no-JS reading. Enhancement selects one complete panel.
 const panels=[...document.querySelectorAll('[data-plan]')];
 const switches=[...document.querySelectorAll('[data-plan-link]')];
+const costs=[...document.querySelectorAll('[data-plan-cost]')];
 let active=null, observers=[], closedDetails=[];
 function observe(panel) {
   observers.forEach(o=>o.disconnect());observers=[];
@@ -25,6 +26,8 @@ function select(id, update=false) {
   active=panel;
   panels.forEach(p=>{p.hidden=p!==panel;});
   switches.forEach(a=>{if(a.dataset.planLink===panel.dataset.plan)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');});
+  // Both totals stay readable; the one on screen is marked. Without JS neither is.
+  costs.forEach(c=>{if(c.dataset.planCost===panel.dataset.plan)c.setAttribute('data-active','');else c.removeAttribute('data-active');});
   const skip=document.querySelector('.skip');if(skip)skip.href='#'+panel.dataset.plan+'-timeline';
   const announcement=document.getElementById('plan-announcement');if(announcement)announcement.textContent='正在查看 Plan '+panel.dataset.plan+'；方案尚未选定。';
   if(update) {const url=new URL(location.href);url.searchParams.set('plan',panel.dataset.plan);url.hash='';history.pushState(null,'',url);}
