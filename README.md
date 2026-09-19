@@ -57,21 +57,11 @@ npx hexo deploy
 
 ## 新西兰旅行页面
 
-页面通过 `/new-zealand/` 直接访问，不在博客菜单展示，并从 sitemap 排除、标记 noindex。内容整理自 Obsidian《新西兰旅行计划》v0.14（2026-09-07）及《预约查询结果与全部链接》；旧版反向路线与被替代的接送团不作为执行安排。
+页面通过 `/new-zealand/` 直接访问，不在博客菜单展示，并从 sitemap 排除、标记 noindex。内容整理自 Obsidian《新西兰旅行计划》v0.23（2026-09-19）及《Plan B整体审核与预订清单》；页面展示最终行程（基督城进、皇后镇出），不展示方案比较或旧版愿望排序页；境内订单状态单独标明。
 
-- `source/_data/new_zealand.json`：12天时间线、6个活动报名卡片、导航链接及原计划详细说明。快照价格／余位与预订状态分别记录；更新计划时同步修改相关日期、费用、说明与版本日期。
+- `source/_data/new_zealand.json`：11天时间线、6个「关注事项」卡片（含司机疲劳分级）、4个活动报名卡片、导航链接及计划详细说明。快照价格／余位与预订状态分别记录；更新计划时同步修改相关日期、费用、说明与版本日期。
 - `source/new-zealand/index.md`：页面元信息。
 - `themes/almostkhan/layout/travel.ejs`：独立页面模板，使用本地 `travel.css` 与 `travel.js`，不加载博客的第三方库、图片背景或字体。
 - 所有行程在构建时生成，关闭 JavaScript 仍可阅读；打印按钮会展开详情。该页面不接入实时库存，不创建订单。
 
 在 `npm run server` 后访问 http://localhost:4000/new-zealand/ 预览。
-
-### 景点愿望排序
-
-路书章节导航可打开 `/new-zealand/wishlist/`，可将此链接手动发给同行朋友。仍不进入博客首页、搜索、订阅和站点地图。
-
-- `source/_data/new_zealand_wishlist.json`：2026-09-08 愿望清单快照，保留 17 项及新增项目的详细说明；不实时查询预约。
-- `themes/almostkhan/layout/wishlist.ejs` 与 `source/css/wishlist.css`、`source/js/wishlist.js`（后两者位于主题目录）：页面、样式及排序交互。
-- 支持 1–17 名、并列、不想去和未决定，以及品酒／三文鱼版本和备注。普通页面自动保存至浏览器 localStorage；分享结果通过 URL fragment 携带，不上传服务器，不自动汇总。朋友需手动把结果链接或文字发回群里。
-- 打开结果链接不会覆盖本机草稿。修改分享结果后需重新复制链接；链接接收者可读取其中的称呼与备注。复制权限不可用时提供文本框手动复制。
-- 本地预览：`npm run server` 后打开 http://localhost:4000/new-zealand/wishlist/。

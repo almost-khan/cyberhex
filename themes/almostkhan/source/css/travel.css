@@ -599,6 +599,23 @@ main { max-width: 1320px; margin: auto; }
   white-space: nowrap;
 }
 
+/* driver-fatigue badge */
+.burden {
+  border: 1px solid color-mix(in srgb, var(--burden) 45%, transparent);
+  background: color-mix(in srgb, var(--burden) 12%, transparent);
+  color: var(--burden);
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.burden-high      { --burden: #c04a30; }
+.burden-elevated  { --burden: var(--warm); }
+.burden-watch     { --burden: #a68a1f; }
+.burden-easy      { --burden: var(--moss); }
+.burden-none      { --burden: var(--muted); }
+
 .day h3 {
   font-size: clamp(23px, 2.2vw, 28px);
   font-family: var(--serif);
