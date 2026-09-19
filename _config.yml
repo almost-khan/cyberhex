@@ -83,8 +83,7 @@ theme: almostkhan
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  # github-personal is an ~/.ssh/config alias for the almost-khan identity.
-  repository: git@github-personal:almost-khan/almostkhan.github.io.git
+  repository: git@github.com:almost-khan/almostkhan.github.io.git
   branch: master
 
 search:
