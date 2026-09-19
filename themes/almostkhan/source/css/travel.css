@@ -201,7 +201,9 @@ summary:focus-visible,
   transform: translateY(-1px);
 }
 
-main { max-width: 1320px; margin: auto; }
+/* flow-root: keep the first child's top margin inside, so the wide-viewport
+   side rules stay unbroken. */
+main { max-width: 1320px; margin: auto; display: flow-root; }
 
 /* --- Hero ----------------------------------------------------------------- */
 .hero {
@@ -754,9 +756,13 @@ summary:hover { color: var(--moss); }
 summary > span {
   float: right;
   display: inline-block;
-  transition: transform .22s cubic-bezier(.2, .7, .3, 1);
-  color: var(--faint);
+  margin-left: 16px;
+  font-size: 16px;
+  line-height: 1.2;
+  transition: transform .22s cubic-bezier(.2, .7, .3, 1), color .16s;
+  color: var(--muted);
 }
+summary:hover > span { color: var(--moss); }
 details[open] > summary { margin-bottom: 20px; }
 details[open] > summary > span { transform: rotate(135deg); }
 
@@ -813,6 +819,17 @@ details[open] > summary > span { transform: rotate(135deg); }
   padding: 3px 11px;
   border-radius: 100px;
 }
+.tag {
+  border: 1px solid var(--line);
+  background: var(--card-2);
+  color: var(--ink-2);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 11px;
+  border-radius: 100px;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
 .booking-en {
   font-size: 11px;
   letter-spacing: .1em;
@@ -863,6 +880,7 @@ details[open] > summary > span { transform: rotate(135deg); }
 .booking dd { margin: 0; overflow-wrap: anywhere; color: var(--ink-2); font-size: 12.5px; }
 
 .booking-links {
+  margin-top: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
@@ -965,6 +983,12 @@ details[open] > summary > span { transform: rotate(135deg); }
   vertical-align: top;
   overflow-wrap: break-word;
 }
+.prose td { font-variant-numeric: tabular-nums; }
+/* Itinerary tables lead with a date or short label; never break those mid-token. */
+.plan-panel .prose th:first-child,
+.plan-panel .prose td:first-child { white-space: nowrap; }
+.prose tbody tr { transition: background .16s; }
+.prose tbody tr:hover { background: color-mix(in srgb, var(--moss) 7%, transparent); }
 .prose tr:last-child td { border-bottom: 0; }
 
 .subheading {
@@ -1110,10 +1134,12 @@ details[open] > summary > span { transform: rotate(135deg); }
 @media (max-width: 760px) {
   :root { --gutter: 20px; --nav-h: 52px; }
   body { font-size: 15px; }
-  .sitebar { padding: 16px var(--gutter); }
+  .sitebar { padding: 16px var(--gutter); gap: 12px; }
   .brand { font-size: 22px; }
-  .brand span { margin-left: 11px; padding-left: 11px; font-size: 10px; }
+  .brand span { margin-left: 11px; padding-left: 11px; font-size: 10px; white-space: nowrap; }
   .edition { display: none; }
+  /* Keep the bar on one line at phone widths. */
+  .sitebar button { white-space: nowrap; font-size: 11.5px; padding: 7px 12px; }
 
   .hero { grid-template-columns: 1fr; padding: 36px var(--gutter) 40px; gap: 34px; }
   .hero h1 { font-size: clamp(40px, 12vw, 56px); }
@@ -1237,4 +1263,185 @@ details[open] > summary > span { transform: rotate(135deg); }
   .travel-footer p { color: #333 !important; }
   a[href^="http"] { text-decoration: underline; }
   .section-heading > p { max-width: 40%; }
+}
+
+/* --- Plan comparison ------------------------------------------------------ */
+/* One contained card: segmented switch, side-by-side totals, footnote. */
+[hidden] { display: none !important; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.plan-overview {
+  margin: 44px var(--gutter) 0;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+.plan-overview ~ .plan-panel .hero { padding-top: 44px; }
+
+.plan-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px 28px;
+  padding: 20px 26px;
+  border-bottom: 1px solid var(--line-soft);
+}
+/* Chinese label: drop the Latin small-caps tracking. */
+.plan-switch .eyebrow {
+  margin-bottom: 0;
+  font-size: 13px;
+  letter-spacing: .01em;
+  text-transform: none;
+  color: var(--ink-2);
+}
+
+/* Segmented control, same active treatment as the sticky section nav. */
+.plan-tabs {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  background: var(--card-2);
+  border: 1px solid var(--line-soft);
+  border-radius: 100px;
+}
+.plan-tabs a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 9px 18px;
+  border-radius: 100px;
+  font-size: 12.5px;
+  color: var(--muted);
+  white-space: nowrap;
+  transition: background .18s, color .18s;
+}
+.plan-tabs a strong { font-weight: 600; color: var(--ink-2); }
+.plan-tabs a:hover { background: var(--card); color: var(--ink); }
+.plan-tabs a:hover strong { color: var(--ink); }
+.plan-tabs a[aria-current] {
+  background: var(--accent-bg);
+  color: var(--accent-fg-dim);
+  box-shadow: var(--shadow-sm);
+}
+.plan-tabs a[aria-current] strong { color: var(--accent-fg); }
+.plan-tabs a[aria-current]:hover { background: var(--accent-bg); color: var(--accent-fg-dim); }
+
+.plan-costs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.plan-costs article {
+  position: relative;
+  min-width: 0;
+  padding: 24px 26px 26px;
+  transition: background .2s;
+}
+.plan-costs article + article {
+  border-left: 1px solid var(--line-soft);
+}
+/* The tab in view is tied to its total. */
+.plan-costs article[data-active] { background: color-mix(in srgb, var(--moss) 7%, transparent); }
+.plan-costs article[data-active]::before {
+  content: '';
+  position: absolute;
+  inset: -1px 0 auto;
+  height: 2px;
+  background: var(--moss);
+}
+
+.cost-label {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+.cost-label span { color: var(--muted); font-size: 11px; font-weight: 400; }
+.cost-amount {
+  font: 400 clamp(30px, 3.2vw, 42px)/1.2 var(--serif);
+  font-variant-numeric: lining-nums tabular-nums;
+  letter-spacing: -.03em;
+  margin: 12px 0 8px;
+  white-space: nowrap;
+}
+.cost-amount small {
+  font: 500 15px/1 var(--sans);
+  color: var(--faint);
+  letter-spacing: 0;
+}
+.cost-amount small:first-child { margin-right: 4px; }
+.cost-amount small:last-child { margin-left: 5px; }
+.cost-person {
+  font-size: 12.5px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.plan-budget-note {
+  font-size: 12px;
+  line-height: 1.85;
+  color: var(--muted);
+  padding: 14px 26px 16px;
+  background: var(--card-2);
+  border-top: 1px solid var(--line-soft);
+}
+.plan-budget-note span {
+  display: block;
+  margin-top: 2px;
+  color: var(--ink-2);
+  font-weight: 500;
+}
+
+@media (max-width: 1080px) {
+  .plan-overview { margin-top: 32px; }
+  .plan-overview ~ .plan-panel .hero { padding-top: 38px; }
+}
+
+@media (max-width: 760px) {
+  .plan-overview { border-radius: var(--radius-sm); margin-top: 24px; }
+  .plan-switch {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    padding: 16px 16px 18px;
+  }
+  .plan-switch .eyebrow { font-size: 12.5px; }
+  .plan-tabs { display: flex; }
+  .plan-tabs a {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 8px 10px;
+    text-align: center;
+  }
+  .plan-tabs a span { font-size: 11px; }
+  .plan-costs article { padding: 18px 16px 20px; }
+  .cost-label span { width: 100%; margin: 0; }
+  .cost-amount { font-size: clamp(23px, 6.4vw, 30px); margin: 9px 0 6px; }
+  .cost-amount small { font-size: 12px; }
+  .cost-amount small:last-child { margin-left: 3px; }
+  .cost-person { font-size: 11.5px; }
+  .plan-budget-note { padding: 13px 16px 14px; font-size: 11.5px; }
+}
+
+@media print {
+  .plan-overview { display: none !important; }
+  .plan-panel[hidden] { display: none !important; }
 }
