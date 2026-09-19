@@ -31,8 +31,6 @@
   "scripts": {
     "build": "node tools/build.js",
     "check": "node tools/check-site.js",
-    "server": "hexo server",
-    "travel:sync": "node tools/sync-travel.js",
-    "test:travel": "node --test tools/travel-model.test.js"
+    "server": "hexo server"
   }
 }
