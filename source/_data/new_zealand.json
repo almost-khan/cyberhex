@@ -1,6 +1,6 @@
 {
-  "version": "v0.23",
-  "updated": "2026-09-19",
+  "version": "v0.24",
+  "updated": "2026-09-28",
   "concerns": [
     {
       "tag": "01 / 司机疲劳",
@@ -23,14 +23,14 @@
       "body": "首选自动挡 Kia Carnival 8 座，官网标注仅 2 大箱＋1 小箱；六个 22 寸箱＋六个背包的实际装载和替代车型（Kombi、Hiace）仍需门店书面确认，不能凭座椅折叠后的最大容积推断能装下。"
     },
     {
-      "tag": "05 / 余位未核",
-      "title": "机票、游船与酒庄团的座位均未锁位",
-      "body": "10/2、10/7 两段国内机票六座，10/5 Milford 11:00 游船六人余位，10/8 怀赫科岛酒庄团和 10/9 霍比特团的五人余位，均只是目标时段或候选产品，尚未确认可售或付款。"
+      "tag": "05 / 余位未锁定",
+      "title": "机票、游船与北岛两团仍需尽快下单",
+      "body": "10/2、10/7 两段国内机票六座与 10/5 Milford 11:00 游船六人余位尚未核；10/8 Te Puia 团在 9/28 查询时余 12 位，10/9 霍比特团的五人余位与接送点仍待确认。所有项目均未付款。"
     },
     {
-      "tag": "06 / 预算待重算",
-      "title": "现价仍是旧三卧模型，未含新增酒庄",
-      "body": "全队¥87,951.60–127,331.60 是 9/16 三卧口径的历史估算；改四卧后的住宿差价和 10/8 酒庄团费用尚未计入，南岛车型如果升级也会改变预算，不是当前完整总价。"
+      "tag": "06 / 暂估总额",
+      "title": "全队约 ¥97,675.60–137,055.60",
+      "body": "已计入 10/8 五人 Te Puia 团及 10% 机动金；住宿仍沿用旧三卧估算，尚未包含最终四卧房价差和可能的车型升级，不能当作完整成交价。国际机票实付、签证翻译及中国境内交通另计。"
     }
   ],
   "days": [
@@ -119,7 +119,7 @@
       },
       "stay": "瓦纳卡 · 6 人",
       "drive": "驾驶约 2.5–3 小时",
-      "summary": "Hooker Valley 往返给足 4 小时，不为赶路压缩徒步或酒庄安排。",
+      "summary": "Hooker Valley 往返给足 4 小时，不为赶下午转场压缩徒步。",
       "schedule": [
         {
           "time": "07:00",
@@ -341,37 +341,37 @@
       "date": "2026-10-08",
       "id": "day-10-08",
       "short": "10/08",
-      "title": "怀赫科岛酒庄团（一人当日离队）",
-      "place": "Auckland → Waiheke Island",
+      "title": "罗托鲁瓦 Te Puia 毛利文化一日团（一人当日离队）",
+      "place": "Auckland → Rotorua → Auckland",
       "region": "split",
       "burden": {
         "emoji": "🚐",
-        "label": "不自驾",
+        "label": "长日 · 不自驾",
         "level": "none"
       },
       "stay": "奥克兰市区 · 5 人（一人离队）",
-      "drive": "本人驾驶 0；渡轮＋岛上团车",
-      "summary": "情侣中的男生今天从奥克兰离队；其余五人去怀赫科岛品酒，不再考虑他的航班或送机。",
+      "drive": "本人驾驶 0；小团往返约 12–13 小时",
+      "summary": "情侣中的男生今天从奥克兰离队；其余五人跟团前往 Rotorua，看 Te Puia 毛利歌舞与 Haka。",
       "schedule": [
         {
-          "time": "目标 09:15–09:30",
-          "text": "自行步行／打车抵达奥克兰市区码头"
+          "time": "约 06:30",
+          "text": "按订单到奥克兰指定酒店接送点；Airbnb 是否上门接送待确认"
         },
         {
-          "time": "目标 10:00",
-          "text": "搭 Fullers 渡轮；与 10:40 岛上接团的衔接待确认"
+          "time": "上午",
+          "text": "小团前往 Rotorua，途中按运营方安排休息"
         },
         {
-          "time": "约 10:40–15:40",
-          "text": "怀赫科岛导览：三家酒庄品酒＋午餐"
+          "time": "白天",
+          "text": "Te Puia 导览、地热谷、毛利歌舞与 Haka、Hāngī 自助午餐"
         },
         {
-          "time": "约 15:40",
-          "text": "送回岛上 Matiatia 码头，再按实际船班返回奥克兰"
+          "time": "约 18:30",
+          "text": "返回奥克兰；实际下车点以订单为准"
         }
       ],
-      "warning": "用户明确无需考虑离队朋友，不为其预留送机时间；具体产品、五人余位、渡轮衔接和集合点均待核实。 10:00 渡轮与 10:40 接团仅为运营方推荐配套，须确认实际船班、接团及迟到安排；15:40 是回到岛上码头，并非已到奥克兰。",
-      "detail": "首选 [Ananda Essence of Waiheke Wine Tour](https://www.ananda.co.nz/tours/the-essence-of-waiheke-wine-tour)：官方建议最晚搭 10:00 Fullers 渡轮，10:40 Matiatia 码头接团，约 15:40 送回码头。官网公开 NZ$285／人不含船票，船票另计 NZ$62／人，五人合计约 NZ$1,735（约¥6,940，未加机动金），需扣除原餐饮预算中已由团费包含的午餐。北岛不租车，全天无需自驾。 市区至码头自行步行／打车，建议 09:15–09:30 到达；愿意早出可先确认是否搭更早船。最终船班、岛上接团及迟到安排须由运营方确认，15:40 送回 Matiatia 码头后仍需等待并搭乘返程渡轮。"
+      "warning": "五人参加，10/8 公开场次在 9/28 查询时余 12 位，但尚未付款；Airbnb 不保证上门接送。离队朋友的机场交通自行安排，其余五人当天无法送机。次日还有约 9 小时霍比特团，北岛连续两天都是长日。",
+      "detail": "选择 [Rotorua Highlights Tour including Te Puia, Cultural Show and Buffet Lunch](https://www.cheekykiwitravel.com/tours/rotorua-highlights-tour-including-te-puia-tour-cultural-show-and-buffet-lunch)：官网公开 2026-10-08 06:30–18:30 场次，9/28 查询时余 12 位，NZ$442／成人；五人合计 NZ$2,210。产品明确包含奥克兰往返小团、Te Puia 导览、地热景观、毛利歌舞与 Haka、Hāngī 自助午餐。小红书帖子同时出现的 Redwoods Treewalk 不包含在本产品内，本计划不额外叠加，以控制连续长日的疲劳。北岛不租车，全天本人驾驶为 0；下单前确认住处到接送点的清晨交通。"
     },
     {
       "date": "2026-10-09",
@@ -575,44 +575,48 @@
       ]
     },
     {
-      "id": "waiheke",
-      "title": "怀赫科岛酒庄团（五人）",
-      "en": "Ananda · Essence of Waiheke Wine Tour",
-      "date": "10/8 · 目标 10:00 渡轮",
+      "id": "maori-te-puia",
+      "title": "Rotorua Te Puia 毛利文化表演一日团（五人）",
+      "en": "Rotorua · Te Puia Cultural Experience",
+      "date": "10/8 · 06:30–18:30",
       "priority": "P1",
-      "state": "候选产品，未选定或预订；五人余位未核",
-      "price": "NZ$347.00／人（NZ$285 团费＋NZ$62 船票，未加机动金）",
-      "snapshot": "9/19 官网公开资料；怀赫科岛品酒已纳入行程，具体产品尚未确定或锁位。",
+      "state": "未预订；9/28 查询 10/8 公开场次余 12 位",
+      "price": "NZ$442.00／人；五人 NZ$2,210.00",
+      "snapshot": "9/28 官网指定日期公开场次快照；价格与余位在付款前可能变化。",
       "facts": [
         [
           "选择",
-          "2026-10-08 · 五人参加，10/8 离队朋友不参加，不预留送机时间"
+          "2026-10-08 · 五人参加；一名朋友当日从奥克兰离队，不参加本团"
         ],
         [
           "集合",
-          "建议 09:15–09:30 到市区码头；目标 10:00 Fullers 渡轮、10:40 Matiatia 接团，实际衔接与迟到安排待确认"
+          "约 06:30 从奥克兰酒店接送点出发；Airbnb 是否接送待运营商确认"
         ],
         [
           "内容",
-          "三家酒庄品酒、午餐、一杯酒及岛上交通；约 15:40 送回 Matiatia 码头，之后再乘船回奥克兰"
+          "Te Puia 导览、地热谷、毛利歌舞与 Haka、Hāngī 自助午餐"
+        ],
+        [
+          "时长",
+          "公开场次约 06:30–18:30；官网产品页标注约 13 小时"
         ],
         [
           "费用",
-          "官网 NZ$285／人不含船票，船票另计 NZ$62／人；五人合计约 NZ$1,735，约¥6,940，未加机动金，需扣除原预算中重复的午餐"
+          "官网 NZ$442／成人；五人合计 NZ$2,210，已纳入暂估预算"
         ],
         [
           "交通",
-          "北岛不租车，全天无需自驾"
+          "奥克兰往返团车，本人不驾驶；离队朋友单独安排机场交通"
         ],
         [
-          "待核",
-          "具体产品、五人余位、渡轮衔接与集合点均待核实"
+          "疲劳",
+          "次日继续约 9 小时霍比特团；不额外叠加 Redwoods Treewalk"
         ]
       ],
       "links": [
         [
           "官方产品页",
-          "https://www.ananda.co.nz/tours/the-essence-of-waiheke-wine-tour"
+          "https://www.cheekykiwitravel.com/tours/rotorua-highlights-tour-including-te-puia-tour-cultural-show-and-buffet-lunch"
         ]
       ]
     },
@@ -652,16 +656,16 @@
     }
   ],
   "sections": {
-    "principles": "**基督城进、皇后镇出，六人同行；10/8 一人在奥克兰离队，其余五人继续到 10/10。** 最终路线已确定，住宿、航班、租车与活动按本行程落实。\n\n- 六人阶段需要整套四间独立卧室：情侣一间、两位女生合住一间、用户单独一间、另一位女生单独一间；女生合住房优先双床，但不是硬条件。10/8 起五人阶段拟三卧，用户始终独住一间。\n- 仅一位司机，不拆成两辆车；Milford Sound 为自驾到码头＋仅订游船，不跟大巴团；Te Anau 只住 10/4 一晚。\n- 北岛不租车：10/7 落地奥克兰起，接驳和跟团解决交通，不再像旧计划那样在奥克兰机场取还北岛车。\n- 10/4 已取消 Rippon 酒庄，为次日 Milford 长驾驶留体力；10/8 已确定怀赫科岛酒庄团，五人参加，不考虑离队朋友的航班或送机。\n- 10/2 晚只在库克山村内裸眼观星，不预约付费望远镜团，也不为找机位额外开车——当天已是全程驾驶负担最重的一天，不再叠加司机的负担。\n- 六人共六个 22 寸箱＋六个背包；10/8 起五人共五个 22 寸箱＋五个背包。南岛用车首选自动挡 Kia Carnival 8 座，实际装载须租车公司确认。\n- 不留整日备用／恢复日；必要的睡眠、餐饮、停车、机场流程和途中休息仍计入每日时间表。",
+    "principles": "**基督城进、皇后镇出，六人同行；10/8 一人在奥克兰离队，其余五人继续到 10/10。** 最终路线已确定，住宿、航班、租车与活动按本行程落实。\n\n- 六人阶段需要整套四间独立卧室：情侣一间、两位女生合住一间、用户单独一间、另一位女生单独一间；女生合住房优先双床，但不是硬条件。10/8 起五人阶段拟三卧，用户始终独住一间。\n- 仅一位司机，不拆成两辆车；Milford Sound 为自驾到码头＋仅订游船，不跟大巴团；Te Anau 只住 10/4 一晚。\n- 北岛不租车：10/7 落地奥克兰起，接驳和跟团解决交通，不再像旧计划那样在奥克兰机场取还北岛车。\n- 10/4 已取消 Rippon 酒庄，为次日 Milford 长驾驶留体力；10/8 已改为 Rotorua Te Puia 毛利文化表演一日团，五人参加；离队朋友自行前往机场，其余五人当天无法送机。\n- 10/2 晚只在库克山村内裸眼观星，不预约付费望远镜团，也不为找机位额外开车——当天已是全程驾驶负担最重的一天，不再叠加司机的负担。\n- 六人共六个 22 寸箱＋六个背包；10/8 起五人共五个 22 寸箱＋五个背包。南岛用车首选自动挡 Kia Carnival 8 座，实际装载须租车公司确认。\n- 不留整日备用／恢复日；必要的睡眠、餐饮、停车、机场流程和途中休息仍计入每日时间表。",
     "flights": "### 国际航班（已购，实付未知）\n\n六人 10/1 抵达奥克兰，10/8 起五人于 10/10 返程；国际票已购，但实付金额未知，签证翻译、中国境内交通另计。\n\n| 日期 | 航段 | 备注 |\n| --- | --- | --- |\n| 10/1 | 深圳 → 奥克兰 AKL | 18:20 落地，当晚住机场附近 |\n| 10/8 | 情侣中的男生 AKL 国际离境 | 用户明确无需考虑其航班时间，其余五人不预留送机时间 |\n| 10/10 | 奥克兰 → 深圳（HU7932） | 五人返程，21:00 起飞 |\n| 10/11 | 深圳 → 杭州 HGH T3（HU7395） | 04:00 深圳落地，中转 10 小时 20 分，14:20 起飞，16:25 杭州落地 |\n\n新西兰主岛为 NZDT，比中国快 5 小时；上表为当地时间。\n\n### 境内航班（目标时段，未核实六座）\n\n| 日期 | 航段 | 目标出发 | 人数 | 每人 NZD | 核对要点 |\n| --- | --- | --- | --- | --- | --- |\n| 10/2 | AKL → CHC | 08:00–08:30 | 6 | 400.00–520.00 | 六座实价、托运行李，按 11:30 左右上路预留；若实际落地更晚需重算转场 |\n| 10/7 | ZQN → AKL | 16:00–18:00 | 6 | 410.00–550.00 | 六座、托运、晚到住宿；对应目标航班留有余量 |\n\n两段均只是目标时段和预算价，尚未确认可售班次与含税总价。",
     "flightQuery": "| 查询 | 状态 |\n| --- | --- |\n| 10/2 AKL→CHC | 目标 08:00–08:30 起飞；六人座位、托运行李及实际时刻均未核实 |\n| 10/7 ZQN→AKL | 目标 16:00–18:00 起飞；六人座位与含税总价未核实 |\n| 10/8 情侣中男生的国际离境票 | 用户明确不考虑其航班时间，本页不再追踪该行程 |\n\n查票入口：[AKL→CHC](https://www.airnewzealand.co.nz/flights/en-nz/flights-from-auckland-to-christchurch) · [ZQN→AKL](https://www.airnewzealand.co.nz/flights/en-nz/flights-from-queenstown-to-auckland)。日期一律选 2026 年、单程、实际六人。",
     "roads": "以下为公开常态参考与本计划的交通额度，**不是实时导航或酒店门到门验证**；停车、吃饭、签到和取还车另算。\n\n| 路段 | 参考数据 | 本计划交通额度 |\n| --- | --- | --- |\n| CHC 机场 → 库克山村（经 Tekapo、普卡基湖） | 取车后含停靠约 6–7 小时（自评） | 纯驾驶约 4–4.5 小时，按 11:30 左右上路、18:00–19:00 入住；Tekapo、普卡基湖及三文鱼仅顺路短停，可因延误缩短／取消 |\n| 库克山村 → 瓦纳卡（经 Lindis Pass） | 自评约 2.5–3 小时 | 含 Hooker Valley 徒步 4 小时，午餐取行李后出发 |\n| 瓦纳卡 → Te Anau（经 Cromwell） | 自评约 3.5–4 小时 | 含途中午餐休息，整体转场约 4.5–5 小时 |\n| Te Anau → Milford Sound → 皇后镇 | Te Anau–Milford 121km／2:15，Queenstown–Milford 288km／4:15，合计约 409km／6:30，[Entrada](https://www.milford-sound.co.nz/travel-info/drive-to-milford-sound/) | 纯驾驶约 410–430km／6.5–7.5 小时，另计停车、签到、游船与 Te Anau 餐休 |\n| 皇后镇 ⇄ 格林诺奇 | 单程约 45km／45 分钟，[皇后镇旅游局](https://www.queenstownnz.co.nz/stories/post/scenic-drives-from-queenstown-explore-more-at-your-own-pace/) | 往返约 1.5–2 小时，含红棚码头与 Lagoon 短走 |\n| 皇后镇市区 → 机场 | 公开常态约 30 分钟 | 30 分钟＋加油还车余量，12:00 出发、13:00 还车 |\n\nSH94（Milford Road）十月仍可能因雪、冰或雪崩临时管制；[NZTA](https://www.nzta.govt.nz/projects/sh94-milford-road/faqs)说明 6–11 月可能要求携带雪链，9 月网页显示的通行状态不是 10/5 的通行保证，需在 10/4 晚和 10/5 早再次核实。默认经 SH6／Cromwell 前往皇后镇，不默认皇冠山道 Crown Range 短时长。",
     "hotels": "住宿房源仅供同行朋友审阅计划时参考，待大家看过后再确定。\n\n**以下为候选房源，不是可订清单；指定日期库存及含费总价均未取得。** 六人阶段需要整套四卧（情侣一间、女生合住一间、用户独住一间、另一位女生独住一间），10/8 起五人阶段拟三卧，用户始终独住一间。访问失败或返回错误不代表当地没房。\n\n| 入住—退房 | 地点 | 候选房源 | 尚需核实 |\n| --- | --- | --- | --- |\n| 10/1–10/2 | 奥克兰机场方向 | [The Central Charm 四卧](https://www.airbnb.com/rooms/1200535241699334402?check_in=2026-10-01&check_out=2026-10-02&adults=6) | 单晚、晚到入住、次晨接送、指定日期库存与含费总价 |\n| 10/2–10/3 | 库克山村 | 村内暂无合适四卧候选，见下方说明 | 四个独立睡眠房间的组合 |\n| 10/3–10/4 | 瓦纳卡 | [4-Bed Alpine Escape](https://www.airbnb.com/rooms/1477127342645773404?check_in=2026-10-03&check_out=2026-10-04&adults=6) · [Modern 4 Bedroom Home](https://www.airbnb.com/rooms/701074387451889995?check_in=2026-10-03&check_out=2026-10-04&adults=6) | 逐房床型、单晚政策、停车、指定日期库存 |\n| 10/4–10/5 | Te Anau | [Relaxing & Spacious 四卧](https://www.airbnb.com/rooms/1534985436855349899?check_in=2026-10-04&check_out=2026-10-05&adults=6) · [Cheerful 四卧](https://www.airbnb.com/rooms/601510940009108465?check_in=2026-10-04&check_out=2026-10-05&adults=6) | 单晚政策、早退房、指定日期库存 |\n| 10/5–10/7 | 皇后镇 | [四卧 townhouse](https://www.airbnb.com/rooms/23340204?check_in=2026-10-05&check_out=2026-10-07&adults=6) | 晚到自助入住、停车坡度与车位尺寸、指定日期库存 |\n| 10/7–10/10 | 奥克兰市区 | [Penthouse 四卧连住](https://www.airbnb.com/rooms/929081788095685266?check_in=2026-10-07&check_out=2026-10-10&adults=6)（方案一，10/8 不换房）或四卧一晚＋[三卧两晚](https://www.airbnb.com/rooms/1000971405250413360?check_in=2026-10-08&check_out=2026-10-10&adults=5)（方案二） | 两方案含费总价对比未取得；若换房，10/8 上岛前须完成退房和行李寄存／转运，不能同时上岛和搬家 |\n\n**库克山村内四卧仍缺。** [Aoraki Alpine Lodge 私人整屋](https://aorakialpinelodge.co.nz/private-rentals/)只有三卧，不符合四卧需求；原“两卧＋Studio”组合也只有三个独立睡眠房间，两者均不采用。多个平台标注“Mount Cook Village”的四卧实际在 Twizel、Pukaki 或 Tekapo，不算村内，本轮未改住宿城镇。\n\n奥克兰连住与换房两个方案只有房型可比较，没有可靠成交价，暂不能判断哪种更便宜；换房还需额外核实行李转运和寄存。",
     "southCar": "**六人仅一位司机，不拆成两辆车。** 首选自动挡 **Kia Carnival 8 座**（混动或柴油），[GO 官网](https://www.gorentals.co.nz/vehicles/8-seater-car-rental/)标注 2 大箱＋1 小箱；已确认六人共六个 22 寸箱＋六个背包，实际装载须租车公司书面确认，不能只凭全部座椅立起的最大容积判断。Ford Kombi 自动挡 9 座（4 大箱＋4 小箱）和 Toyota Hiace 10 座为备选，座位更多不等于行李更多。\n\n[南岛异地还车查询](https://www.gorentals.co.nz/services/one-way-car-rental/christchurch-to-queenstown/)：2026-10-02 约 11:00 基督城取，2026-10-07 约 13:00 皇后镇还，122 小时，按 6 天预算；取车预约约 11:00，上路按 11:30 左右留余量，实际取还时间随航班调整。\n\n下单前核对：自动挡、异地还车费、保险自负额／玻璃轮胎／除外责任、押金和主司机付款卡要求、柴油 RUC（如适用）、SH94 可能需要的雪链适配和使用示范——**雪链损伤不在租车保险内，全险不等于所有损失都保。** 非英文驾照需有效原件和合规英文翻译，车型资格由租车公司按实际驾照确认。",
-    "budget": "**以下沿用 9/16 三卧模型的历史估算，未含四卧住宿差价，也未计入 10/8 新增的怀赫科岛酒庄团费用，不是当前完整报价。** 全队境内预算（含 10%机动金）¥87,951.60–127,331.60；国际机票已购但实付未知，签证翻译、中国境内交通、自选项目另计。\n\n| 分组 | 人数 | 含机动金人民币／人 |\n| --- | --- | --- |\n| 全程至 10/10 | 5 | 15,109.60–21,838.67 |\n| 10/8 离队 | 1 | 12,403.60–18,138.27 |\n\n| 项目 | 全队 NZD | 口径 |\n| --- | --- | --- |\n| 9 晚住宿（旧三卧模型） | 5,500.00–8,400.00 | 前 7 晚六人分摊、后 2 晚五人分摊；不是按新四卧需求的报价 |\n| 两段国内机票 | 4,860.00–6,420.00 | 每人含一件托运预算×6；六个同价座位未核 |\n| 南岛用车（6 天，装载待核） | 1,200.00–2,100.00 | 含保险和异地费预留，不是已确认能装六人行李的车型报价 |\n| 南岛油费＋停车 | 410.00–640.00 | 含 Milford、Hooker 停车预算；北岛不租车，无停车费用 |\n| 接送与短途交通 | 630.00–1,010.00 | 含朋友 10/8 单独赴机场交通 |\n| 基础活动 | 3,429.00–4,189.00 | Milford 船票、Skyline、Hobbiton 团费；不含怀赫科岛酒庄团 |\n| 餐饮／补给 | 3,480.00–5,220.00 | 五人×10 天＋一人×8 天，60–90 NZD／人天 |\n| 旅行保险与通信 | 480.00–960.00 | 六人各 80–160 |\n\n**10/8 怀赫科岛酒庄团尚未计入：** Ananda 公开 NZ$285＋船票 NZ$62，五人合计 NZ$1,735（约¥6,940，未加机动金），需扣除原餐饮预算中已由团费包含的午餐。四卧住宿差价与车型升级也可能改变预算，暂不重算出新的全队总额。分摊规则同样待全队接受：暂按实际参与分摊，前 7 晚六人平摊、后 2 晚五人平摊，朋友 10/8 餐饮按整天预留、单独赴机场自己承担，整套房不因少一人自动降价。",
-    "prerequisites": "**均未锁位；下单前先核实这些依赖，再按取消条款付款，不要先付一串不可退项目再发现固定住宿缺口。**\n\n| 订单 | 日期／人数 | 下单前核对 |\n| --- | --- | --- |\n| 奥克兰机场附近住宿 | 10/1–2，1 晚 6 人 | 晚到入住；次晨至国内航站楼六人及行李接送 |\n| 库克山村住宿 | 10/2–3，1 晚 6 人，四个独立睡眠房间 | 整屋或多套组合；原两卧＋Studio 不满足新四房要求 |\n| 瓦纳卡住宿 | 10/3–4，1 晚 6 人 | 接受单晚、停车、床型 |\n| Te Anau 住宿 | 10/4–5，1 晚 6 人 | 接受单晚、07:00 前自助退房、停车 |\n| 皇后镇住宿 | 10/5–7，2 晚 6 人 | 10/5 晚到自助入住、大车停车 |\n| 奥克兰市区住宿 | 10/7–10，3 晚，人数 6/5/5 | 首晚六人合规；码头／团集合交通；10/10 退房寄存 |\n| AKL→CHC 国内票 | 10/2，6 人，目标 08:00–08:30 | 六座实价、每人托运行李 |\n| ZQN→AKL 国内票 | 10/7，6 人，目标 16:00–18:00 | 六座、托运、晚到住宿 |\n| 南岛租车 | 10/2 CHC 取—10/7 ZQN 还 | 车型、六人实际行李、自动挡、保险和雪链 |\n| Milford 仅游船票 | 10/5，6 人，优先 11:00 | 非大巴套餐；船班与路况；停车与签到 |\n| 五人酒庄团＋渡轮 | 10/8，5 人 | 怀赫科岛首选，具体产品未定；船票是否含、酒庄与集合点 |\n| 霍比特村往返团 | 10/9，5 人 | 含奥克兰往返车＋片场门票，不能只买片场门票 |\n| Skyline＋Luge | 10/6，6 人 | 当天营业、天气和疲劳，选票种与次数 |\n| 接送 | 10/1 机场→住处、10/2 住处→国内楼、10/7 机场→市区、10/10 市区→国际楼 | 前三段 6 人＋行李，最后一段 5 人＋行李 |\n| 10/10 行李寄存 | 五人行李 | 住宿若不提供，另选合适寄存点 |\n| 旅行保险、通信、驾照翻译（若未办） | 按实际人员 | 覆盖出行日期、活动及自驾 |\n\n不需要订：北岛租车；普通格林诺奇湖边散步；普通自助 Hooker 徒步。Rippon 已取消，不用预约。",
-    "priorities": "下列是执行优先级，不代表已下单；现在就筛选可免费取消的具体房价／票种，核实条款后再付款。\n\n| 优先级 | 立即处理 |\n| --- | --- |\n| **P0，同批推进** | 六段住宿的指定日期库存与含费总价（尤其库克山村四卧缺口）、南岛租车装载确认、10/2 与 10/7 两段国内机票六座 |\n| **P1，紧接着** | 10/5 Milford 11:00 游船六人余位、10/8 怀赫科岛酒庄团产品与五人余位、10/9 霍比特团五人余位 |\n| **P2** | 10/6 Skyline＋Luge 票种与余位、其余接送与行李寄存安排 |\n\n- [ ] 按整套四卧、女生合住房双床优先但非硬条件筛选；核实六段住宿同日期库存及含费总价。\n- [ ] 核实南岛用车六人＋六箱＋六背包的实际装载，确认车型与保险、雪链。\n- [ ] 核实两段国内机票、Milford 游船、怀赫科岛酒庄团、霍比特团、Skyline 的六／五座余位。\n- [ ] 选定怀赫科岛具体产品后，扣除餐饮预算中重复的午餐，重算含酒庄的总预算。\n- [ ] 补齐晚到入住、行李寄存与机场接送安排。",
-    "research": "[Entrada 峡湾驾驶距离](https://www.milford-sound.co.nz/travel-info/drive-to-milford-sound/) · [RealNZ 船班、停车、签到](https://www.realnz.com/en/experiences/day-cruises/milford-sound-classic-cruise/) · [NZTA Milford Road 与雪链](https://www.nzta.govt.nz/projects/sh94-milford-road/faqs) · [DOC Hooker 步道](https://www.doc.govt.nz/hooker-valley-track) · [瓦纳卡官方地图](https://www.wanaka.co.nz/content/uploads/2024/08/J002521_LWT_Visitor-Map_480x345_Regional_Digital.pdf) · [皇后镇旅游局路线比较](https://www.queenstownnz.co.nz/stories/post/scenic-drives-from-queenstown-explore-more-at-your-own-pace/) · [GO 车型及行李](https://www.gorentals.co.nz/vehicles/8-seater-car-rental/) · [GO 基督城门店](https://www.gorentals.co.nz/rental-car-locations/christchurch/) · [GO 皇后镇门店](https://www.gorentals.co.nz/rental-car-locations/queenstown/) · [GO 雪链及保险](https://www.gorentals.co.nz/services/ski-car-rental/) · [NZTA 租车驾照要求](https://nzta.govt.nz/business/rental-vehicles/renting-a-vehicle) · [Air NZ 行李截止](https://www.airnewzealand.com/baggage-help) · [Aoraki Court 前台](https://aorakicourt.co.nz/find-us/) · [Ananda 酒庄团](https://www.ananda.co.nz/tours/the-essence-of-waiheke-wine-tour) · [霍比特团](https://www.cheekykiwitravel.com/tours/hobbiton-movie-set-tour-from-auckland) · [Skyline 票价](https://queenstown.skyline.co.nz/pricing-and-packages/)\n\n出发前再查[NZTA 路况](https://www.journeys.nzta.govt.nz/)；疲劳或封路时删景点、改住宿，不加速和夜驾追回计划。准备证件离线副本、保暖防雨、防滑鞋、通信充电；完成[官方入境申报](https://www.nztd.govt.nz/completing-your-declaration/)。当地 9/26–10/11 为学生假期，仅作客流背景，不代表一定涨价或售罄。"
+    "budget": "**当前可计算的暂估总额已计入 10/8 五人 Te Puia 团，但住宿仍沿用 9/16 三卧模型，未包含最终四卧房价差；南岛车型若升级也会改变预算。** 全队境内预算（含 10% 机动金）¥97,675.60–137,055.60；国际机票已购但实付未知，签证翻译、中国境内交通、自选项目另计。\n\n| 分组 | 人数 | 含机动金人民币／人 |\n| --- | --- | --- |\n| 全程至 10/10 | 5 | 17,054.40–23,783.47 |\n| 10/8 离队 | 1 | 12,403.60–18,138.27 |\n\n| 项目 | 全队 NZD | 口径 |\n| --- | --- | --- |\n| 9 晚住宿（旧三卧模型） | 5,500.00–8,400.00 | 前 7 晚六人分摊、后 2 晚五人分摊；不是按新四卧需求的报价 |\n| 两段国内机票 | 4,860.00–6,420.00 | 每人含一件托运预算×6；六个同价座位未核 |\n| 南岛用车（6 天，装载待核） | 1,200.00–2,100.00 | 含保险和异地费预留，不是已确认能装六人行李的车型报价 |\n| 南岛油费＋停车 | 410.00–640.00 | 含 Milford、Hooker 停车预算；北岛不租车，无停车费用 |\n| 接送与短途交通 | 630.00–1,010.00 | 含朋友 10/8 单独赴机场交通及市区接送预留 |\n| 基础活动 | 5,639.00–6,399.00 | Milford 船票、Skyline、10/8 Te Puia 五人团与 10/9 Hobbiton 五人团 |\n| 餐饮／补给 | 3,480.00–5,220.00 | 五人×10 天＋一人×8 天，60–90 NZD／人天；Te Puia 已含午餐但这里未扣除，按保守预算处理 |\n| 旅行保险与通信 | 480.00–960.00 | 六人各 80–160 |\n\n**10/8 Te Puia 团已计入：** 官网指定日期公开价 NZ$442／人，五人合计 NZ$2,210。全队基础预算为 NZ$22,199.00–31,149.00，再按 1 NZD＝¥4 和 10% 机动金折算。最终仍需补上四卧住宿相对旧模型的实际差价与可能的车型升级费用。分摊暂按实际参与：前 7 晚六人平摊、后 2 晚五人平摊；朋友 10/8 餐饮按整天预留、单独赴机场自己承担，整套房不因少一人自动降价。",
+    "prerequisites": "**均未锁位；下单前先核实这些依赖，再按取消条款付款，不要先付一串不可退项目再发现固定住宿缺口。**\n\n| 订单 | 日期／人数 | 下单前核对 |\n| --- | --- | --- |\n| 奥克兰机场附近住宿 | 10/1–2，1 晚 6 人 | 晚到入住；次晨至国内航站楼六人及行李接送 |\n| 库克山村住宿 | 10/2–3，1 晚 6 人，四个独立睡眠房间 | 整屋或多套组合；原两卧＋Studio 不满足新四房要求 |\n| 瓦纳卡住宿 | 10/3–4，1 晚 6 人 | 接受单晚、停车、床型 |\n| Te Anau 住宿 | 10/4–5，1 晚 6 人 | 接受单晚、07:00 前自助退房、停车 |\n| 皇后镇住宿 | 10/5–7，2 晚 6 人 | 10/5 晚到自助入住、大车停车 |\n| 奥克兰市区住宿 | 10/7–10，3 晚，人数 6/5/5 | 首晚六人合规；清晨前往团集合点；10/10 退房寄存 |\n| AKL→CHC 国内票 | 10/2，6 人，目标 08:00–08:30 | 六座实价、每人托运行李 |\n| ZQN→AKL 国内票 | 10/7，6 人，目标 16:00–18:00 | 六座、托运、晚到住宿 |\n| 南岛租车 | 10/2 CHC 取—10/7 ZQN 还 | 车型、六人实际行李、自动挡、保险和雪链 |\n| Milford 仅游船票 | 10/5，6 人，优先 11:00 | 非大巴套餐；船班与路况；停车与签到 |\n| Te Puia 毛利文化表演团 | 10/8，5 人 | 06:30–18:30 场次、五人余位、取消条款与奥克兰接送点 |\n| 霍比特村往返团 | 10/9，5 人 | 含奥克兰往返车＋片场门票，不能只买片场门票 |\n| Skyline＋Luge | 10/6，6 人 | 当天营业、天气和疲劳，选票种与次数 |\n| 接送 | 10/1 机场→住处、10/2 住处→国内楼、10/7 机场→市区、10/10 市区→国际楼 | 前三段 6 人＋行李，最后一段 5 人＋行李 |\n| 10/10 行李寄存 | 五人行李 | 住宿若不提供，另选合适寄存点 |\n| 旅行保险、通信、驾照翻译（若未办） | 按实际人员 | 覆盖出行日期、活动及自驾 |\n\n不需要订：北岛租车；普通格林诺奇湖边散步；普通自助 Hooker 徒步。Rippon 与怀赫科岛品酒均已取消，不用预约。",
+    "priorities": "下列是执行优先级，不代表已下单；现在就筛选可免费取消的具体房价／票种，核实条款后再付款。\n\n| 优先级 | 立即处理 |\n| --- | --- |\n| **P0，同批推进** | 六段住宿的指定日期库存与含费总价（尤其库克山村四卧缺口）、南岛租车装载确认、10/2 与 10/7 两段国内机票六座 |\n| **P1，紧接着** | 10/5 Milford 11:00 游船六人余位、10/8 Te Puia 毛利文化团五人余位与接送点、10/9 霍比特团五人余位 |\n| **P2** | 10/6 Skyline＋Luge 票种与余位、其余接送与行李寄存安排 |\n\n- [ ] 按整套四卧、女生合住房双床优先但非硬条件筛选；核实六段住宿同日期库存及含费总价。\n- [ ] 核实南岛用车六人＋六箱＋六背包的实际装载，确认车型与保险、雪链。\n- [ ] 核实两段国内机票、Milford 游船、Te Puia 毛利文化团、霍比特团、Skyline 的六／五座余位。\n- [ ] 确认 Te Puia 团的五人含税成交价、取消条款和 Airbnb 至接送点的清晨交通。\n- [ ] 补齐晚到入住、行李寄存与机场接送安排。",
+    "research": "[Entrada 峡湾驾驶距离](https://www.milford-sound.co.nz/travel-info/drive-to-milford-sound/) · [RealNZ 船班、停车、签到](https://www.realnz.com/en/experiences/day-cruises/milford-sound-classic-cruise/) · [NZTA Milford Road 与雪链](https://www.nzta.govt.nz/projects/sh94-milford-road/faqs) · [DOC Hooker 步道](https://www.doc.govt.nz/hooker-valley-track) · [瓦纳卡官方地图](https://www.wanaka.co.nz/content/uploads/2024/08/J002521_LWT_Visitor-Map_480x345_Regional_Digital.pdf) · [皇后镇旅游局路线比较](https://www.queenstownnz.co.nz/stories/post/scenic-drives-from-queenstown-explore-more-at-your-own-pace/) · [GO 车型及行李](https://www.gorentals.co.nz/vehicles/8-seater-car-rental/) · [GO 基督城门店](https://www.gorentals.co.nz/rental-car-locations/christchurch/) · [GO 皇后镇门店](https://www.gorentals.co.nz/rental-car-locations/queenstown/) · [GO 雪链及保险](https://www.gorentals.co.nz/services/ski-car-rental/) · [NZTA 租车驾照要求](https://nzta.govt.nz/business/rental-vehicles/renting-a-vehicle) · [Air NZ 行李截止](https://www.airnewzealand.com/baggage-help) · [Aoraki Court 前台](https://aorakicourt.co.nz/find-us/) · [Te Puia 毛利文化一日团](https://www.cheekykiwitravel.com/tours/rotorua-highlights-tour-including-te-puia-tour-cultural-show-and-buffet-lunch) · [霍比特团](https://www.cheekykiwitravel.com/tours/hobbiton-movie-set-tour-from-auckland) · [Skyline 票价](https://queenstown.skyline.co.nz/pricing-and-packages/)\n\n出发前再查[NZTA 路况](https://www.journeys.nzta.govt.nz/)；疲劳或封路时删景点、改住宿，不加速和夜驾追回计划。准备证件离线副本、保暖防雨、防滑鞋、通信充电；完成[官方入境申报](https://www.nztd.govt.nz/completing-your-declaration/)。当地 9/26–10/11 为学生假期，仅作客流背景，不代表一定涨价或售罄。"
   },
   "maps": [
     {
@@ -693,8 +697,8 @@
       "url": "https://www.google.com/maps/dir/?api=1&origin=Queenstown+New+Zealand&destination=Queenstown+Airport+New+Zealand&travelmode=driving"
     },
     {
-      "title": "奥克兰市区 → 渡轮码头（怀赫科岛）",
-      "url": "https://www.google.com/maps/dir/?api=1&origin=Auckland+CBD+New+Zealand&destination=Auckland+Ferry+Terminal+New+Zealand&travelmode=driving"
+      "title": "奥克兰 → Rotorua Te Puia（报团，不自驾）",
+      "url": "https://www.google.com/maps/dir/?api=1&origin=Auckland+CBD+New+Zealand&destination=Te+Puia+Rotorua+New+Zealand&travelmode=driving"
     }
   ]
 }
