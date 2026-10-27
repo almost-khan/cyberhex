@@ -51,7 +51,14 @@ npm run build
 npx hexo deploy
 ```
 
-`npx hexo deploy` 会实际推送生成的网站，执行前需要本机 GitHub SSH 认证及目标仓库的写入权限。
+`npx hexo deploy` 会实际推送生成的网站，执行前需要本机 GitHub SSH 认证及目标仓库的写入权限。部署地址使用 SSH 别名 `github-personal`（个人账号密钥），需要在 `~/.ssh/config` 中配置：
+
+```
+Host github-personal
+  HostName github.com
+  IdentityFile ~/.ssh/id_ed25519_personal
+  IdentitiesOnly yes
+```
 
 发布目标由 `_config.yml` 的 `deploy` 配置指定，当前是 `almost-khan/almostkhan.github.io` 的 `master` 分支。博客源码的 Git 提交与网站发布是两件独立的事。GitHub Pages 的 HTTPS 和域名设置见 [ssl-setup-guide.md](ssl-setup-guide.md)。
 
