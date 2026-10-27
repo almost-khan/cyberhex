@@ -65,3 +65,13 @@ npx hexo deploy
 - 所有行程在构建时生成，关闭 JavaScript 仍可阅读；打印按钮会展开详情。该页面不接入实时库存，不创建订单。
 
 在 `npm run server` 后访问 http://localhost:4000/new-zealand/ 预览。
+
+## 「边疆的熔炉」演讲页面
+
+页面通过 `/nation-building/` 直接访问（阅读版），`/nation-building/show/` 是投屏版，`/nation-building/speaker/` 是演讲者版。和新西兰页面一样不在博客菜单展示，所有页面标记 noindex，不进 sitemap、RSS 和搜索。
+
+- 这是另一个 Astro 项目（Obsidian `Projects/nation_building_talk`）的构建产物，不要在这里手改。在那个项目里执行 `npm run blog`，它会用 `/nation-building/` 路径构建，再整体替换 `source/nation-building/`。
+- `_config.yml` 的 `skip_render` 让 Hexo 原样复制这个目录。
+- `tools/check-site.js` 检查三个页面存在、都是 noindex，且首页、sitemap、RSS、搜索里没有入口。
+
+在 `npm run server` 后访问 http://localhost:4000/nation-building/ 预览。

@@ -1,0 +1,30 @@
+Map data sources and licences for this site
+
+1. Historical borders, c. 1300 (khanates map)
+   Source: aourednik/historical-basemaps, file geojson/world_1300.geojson
+           https://github.com/aourednik/historical-basemaps
+   Licence: GNU General Public License v3.0 (full text: GPL-3.0.txt in this directory)
+   Modifications: five polities selected (Great Khanate, Tibet, Chagatai Khanate,
+   Ilkhanate, Golden Horde), coordinates rounded to 0.01 degree, ids and Chinese labels
+   (nameZh) added, other source properties dropped; geometry otherwise unchanged.
+   On the map Tibet is shaded together with the Yuan.
+   The modified extract is src/assets/geo/khanates-1300.json in this project's source
+   and is distributed under the same licence.
+
+2. Rivers, lakes and province boundaries (Hehuang and Yellow River maps)
+   Source: Natural Earth 1:10m (rivers_lake_centerlines, lakes, admin_1_states_provinces)
+           https://www.naturalearthdata.com/
+   Licence: public domain.
+
+3. Elevation / shaded relief
+   Source: NOAA ETOPO1 Global Relief Model, via ERDDAP (etopo180)
+           doi:10.7289/V5C8276M
+   Licence: U.S. Government work, public domain.
+   Tributaries on these maps are traced from this elevation model and are approximate.
+
+4. Country outlines and borders (all maps)
+   Source: Natural Earth 1:10m admin_0_countries, China point of view
+           (ne_10m_admin_0_countries_chn), https://www.naturalearthdata.com/
+   Licence: public domain.
+   Modifications: simplified to two levels of detail
+   (src/assets/geo/countries-chn-50.json and countries-chn-110.json).

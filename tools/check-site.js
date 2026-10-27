@@ -57,7 +57,12 @@ for (const booking of trip.bookings) {
 assert(!/<(?:script|link)[^>]+(?:src|href)="(?:https?:)?\/\//.test(travel.replace(/<link rel="canonical"[^>]*>/g, '')),
   'Travel page should not depend on external scripts or styles');
 assert(travel.includes('content="noindex, nofollow"'), 'Travel page must remain unindexed');
+for (const page of ['nation-building/index.html', 'nation-building/show/index.html', 'nation-building/speaker/index.html']) {
+  assert(read(page).includes('content="noindex, nofollow"'), `${page}: talk pages must remain unindexed`);
+}
 for (const file of ['index.html', 'sitemap.xml', 'baidusitemap.xml', 'search.xml', 'atom.xml']) {
-  assert(!read(file).includes('/new-zealand/'), `${file}: unlisted travel pages exposed`);
+  for (const unlisted of ['/new-zealand/', '/nation-building/']) {
+    assert(!read(file).includes(unlisted), `${file}: unlisted page ${unlisted} exposed`);
+  }
 }
 console.log(`Site checks passed: ${pages.length} HTML pages, local links, stable URLs, SEO and feed checks.`);
