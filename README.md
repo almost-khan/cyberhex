@@ -64,7 +64,7 @@ Host github-personal
 
 ## 新西兰旅行页面
 
-页面通过 `/new-zealand/` 直接访问，不在博客菜单展示，并从 sitemap 排除、标记 noindex。内容整理自 Obsidian《新西兰旅行计划》v0.23（2026-09-19）及《Plan B 整体审核与预订清单》；页面展示最终行程（基督城进、皇后镇出），不展示方案比较或旧版愿望排序页；境内订单状态单独标明。
+页面通过 `/new-zealand/` 直接访问，不在博客菜单展示，并从 sitemap 排除、标记 noindex。内容整理自 Obsidian《新西兰旅行计划》v0.26（2026-09-29）及《Plan B 整体审核与预订清单》；页面展示最终行程（基督城进、皇后镇出），不展示方案比较或旧版愿望排序页；境内订单状态单独标明。最新同步：10/2 改住蒂卡波、10/3 经库克山徒步前往瓦纳卡；瓦纳卡采用已选去哪儿房源，详情及订单状态待补，10/2 航班时段待定。
 
 - `source/_data/new_zealand.json`：11 天时间线、6 个「关注事项」卡片（含司机疲劳分级）、4 个活动报名卡片、导航链接及计划详细说明。快照价格／余位与预订状态分别记录；更新计划时同步修改相关日期、费用、说明与版本日期。
 - `source/new-zealand/index.md`：页面元信息。
@@ -78,6 +78,7 @@ Host github-personal
 页面通过 `/nation-building/` 直接访问（阅读版），`/nation-building/show/` 是投屏版，`/nation-building/speaker/` 是演讲者版。和新西兰页面一样不在博客菜单展示，所有页面标记 noindex，不进 sitemap、RSS 和搜索。
 
 - 这是另一个 Astro 项目（Obsidian `Projects/nation_building_talk`）的构建产物，不要在这里手改。在那个项目里执行 `npm run blog`，它会用 `/nation-building/` 路径构建，再整体替换 `source/nation-building/`。
+- 2026-10-30：因当前可访问的 Astro 项目副本缺少 `src`，第三章 03.05 节关于喀尔喀中心主义与科尔沁的补充暂写在本仓库的阅读版和讲者版构建页面中。下次从 Astro 项目重新构建前，须先把这两段及其引文同步到原项目；否则重新导入会覆盖本次补充。
 - `_config.yml` 的 `skip_render` 让 Hexo 原样复制这个目录。
 - `tools/check-site.js` 检查三个页面存在、都是 noindex，且首页、sitemap、RSS、搜索里没有入口。
 
